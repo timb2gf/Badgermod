@@ -1,7 +1,7 @@
 SelectMission("m1sd");
 
 SetMissionResetPlayerOutCar("m1_homerstart", "m1_carstart");
-SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
+SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1z2.p3d;");
 
 UsePedGroup( 0 ); 
 
