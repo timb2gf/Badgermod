@@ -1,0 +1,54 @@
+SelectMission("m2sd");
+
+SetMissionResetPlayerOutCar("m4_homer_start", "m4_carstart");
+SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
+
+UsePedGroup( 0 ); 
+
+AddStage(9);
+	SetMaxTraffic(2);
+	SetStageMessageIndex(08);
+	SetHUDIcon( "pwrplant" );
+	SetPresentationBitmap( "art/frontend/dynaload/images/mis01_04.p3d" );
+	AddObjective("goto","both");
+		SetDestination("m4_powerplant", "carsphere");
+		AddNPC("burns", "m4_carl_sd");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	SetStageMessageIndex(254);
+	SetHUDIcon( "wstation" );
+	AddObjective("goto");
+		TurnGotoDialogOff();
+		SetDestination("m4_locator_sd", "triggersphere");
+		SetCollectibleEffect("wrench_collect");
+		MustActionTrigger();
+	CloseObjective();
+	//SetCompletionDialog("camera");
+CloseStage();
+
+AddStage(0);
+	AddObjective("dialogue");
+		AmbientAnimationRandomize( 1, 0 );      // ( pc=0, npc=1) (nonrandom=0, random=1)
+		AmbientAnimationRandomize( 0, 0 );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientPcAnimation( "none" );
+		SetDialogueInfo("homer","burns","sleep",0);
+		SetFadeOut( 2 );
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	AddObjective("timer");
+		SetDurationTime(3);
+		SetStageCharacterModel("burns");
+		TurnGotoDialogOff();
+		SetPresentationBitmap( "art/frontend/dynaload/images/mis01_02.p3d" );
+		AddStageCharacter ("homer", "m1_smithers", "", "", "");
+		AddStageVehicle("burns_v","m1_smitherscar","target","Missions\level01\M1race.con");
+	CloseObjective();
+CloseStage();
+
+CloseMission();

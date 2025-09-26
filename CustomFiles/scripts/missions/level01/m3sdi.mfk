@@ -1,0 +1,31 @@
+SelectMission("m3sd");
+
+UsePedGroup( 0 ); 
+
+//SetInitialWalk("level1_homer_start");
+
+SetMissionResetPlayerOutCar("level1_homer_start", "level1_carstart");
+SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
+
+AddStage();
+	RESET_TO_HERE();
+	SetStageMessageIndex(166);
+	SetStageCharacterModel("skinner");
+	AddObjective("timer");
+		AddStageCharacter ("homer", "m3_skinnerstart", "", "current", "m1_smitherscar");
+		SetDurationTime(5);
+	CloseObjective();
+CloseStage();
+
+CloseMission();
+
+//dialogue_hands_in_air
+//dialogue_hands_on_hips
+//dialogue_scratch_head
+//dialogue_shaking_fist
+//dialogue_thinking
+//dialogue_yes
+//dialogue_no
+//dialogue_cross_arms
+//dialogue_open_arm_hand_gesture
+//dialogue_shake_hand_in_air
