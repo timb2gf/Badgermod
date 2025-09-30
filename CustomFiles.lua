@@ -1,0 +1,1 @@
+dofile(GetModPath() .. "/Resources/lib/Game.lua")

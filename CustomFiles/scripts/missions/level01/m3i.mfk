@@ -1,22 +1,18 @@
 SelectMission("m3");
 
-SetMissionResetPlayerInCar("m3_carstart");
-SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
+SetMissionResetPlayerInCar("m3_skinnecarrstart");
+SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r7.p3d;");
+InitLevelPlayerVehicle("skinn_v","m3_skinnecarrstart","OTHER");
+SetForcedCar();
 
 SetNumValidFailureHints( 5 );
 
 UsePedGroup( 1 ); 
 
 AddStage(0);
-	SetStageMessageIndex(12);
-	AddObjective("getin");
-		SetObjTargetVehicle("current");
-	CloseObjective();
-CloseStage();
-
-AddStage(0);
 	SetStageMessageIndex(253);
 	SetHUDIcon("kburger");
+	SetStageCharacterModel("skinner");
 	AddObjective("goto");
 		TurnGotoDialogOff();
 		AddNPC("lenny", "m3_lenny");
@@ -35,6 +31,7 @@ CloseStage();
 AddStage(8);
 	RESET_TO_HERE();
 	SetStageMessageIndex(131);
+	SetStageCharacterModel("skinner");
 	SetHUDIcon( "kwike" );
 	AddStageVehicle("smith_v","m4_smithers_carstart","NULL","Missions\level01\M3dest.con", "smithers");
 	AddObjective("goto");

@@ -3748,9 +3748,9 @@ create daSoundResourceData named W_Ridereply_Clt_tubes
     AddFilename ( "Cletus/W_Ridereply_Clt_tubes.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_accuse_1_convinit_Hom_L1M7
+create daSoundResourceData named C_accuse_1_convinit_Hom_L1M3
 {
-    AddFilename ( "conversations/C_accuse_1_convinit_Hom_L1M7.rsd" 1.000000 )
+    AddFilename ( "conversations/C_accuse_1_convinit_Hom_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_accuse_2_convinit_Bur_L1M7
@@ -7078,12 +7078,12 @@ create daSoundResourceData named C_school_1_convinit_Lis_L3M6
     AddFilename ( "conversations/C_school_1_convinit_Lis_L3M6.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_scorpion_1_convinit_Mrg_L1M3
+create daSoundResourceData named C_scorpion_1_convinit_Mrg_L7M3
 {
     AddFilename ( "conversations/C_scorpion_1_convinit_Mrg_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_scorpion_2_convinit_Hom_L1M3
+create daSoundResourceData named C_scorpion_2_convinit_Hom_L7M3
 {
     AddFilename ( "conversations/C_scorpion_2_convinit_Hom_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
@@ -19416,5 +19416,10 @@ create daSoundResourceData named P_NHitByC_Zm4_02
 create daSoundResourceData named P_NHitByC_Zm4_03
 {
     AddFilename ( "Zombie4/P_NHitByC_Zm4_03.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_pedaly_1_convinit_Skn_L1M3
+{
+    AddFilename ( "conversations/C_pedaly_1_convinit_Skn_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
