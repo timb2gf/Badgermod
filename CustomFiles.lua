@@ -14,32 +14,48 @@ function GetGamePath(Path)
 	return Path
 end
 
-SkinnerDialog = {}
+Dialog = {}
 
-local LoadOgg = IsHackLoaded("OggVorbisSupport")
-local LoadFLAC = IsHackLoaded("FLACSupport")
-DirectoryGetEntries("/GameData/skinner", function(Entry, IsDir)
+local SupportedAudioExtensions = {
+	[".rsd"] = true,
+	[".ogg"] = IsHackLoaded("OggVorbisSupport"),
+	[".flac"] = IsHackLoaded("FLACSupport"),
+}
+
+DirectoryGetEntries("/GameData/", function(Character, IsDir)
 	if IsDir then
-		return true
+		DirectoryGetEntries("/GameData/" .. Character, function(Entry, IsDir2)
+			if IsDir2 then
+				return true
+			end
+			
+			local ext = GetFileExtension(Entry):lower()
+			if not SupportedAudioExtensions[ext] then
+				return true
+			end
+			
+			local type = Entry:match("^(._.-)_")
+			if not type then
+				return true
+			end
+			type = type:lower()
+			
+			local characterDialog = Dialog[Character]
+			if not characterDialog then
+				characterDialog = {}
+				Dialog[Character] = characterDialog
+			end
+			
+			local dialog = characterDialog[type]
+			if not dialog then
+				dialog = {}
+				characterDialog[type] = dialog
+			end
+			dialog[#dialog + 1] = "/GameData/" .. Character .. "/" .. Entry
+			
+			return true
+		end)
 	end
-	
-	local ext = GetFileExtension(Entry):lower()
-	if not (ext == ".rsd" or (LoadOgg and ext == ".ogg") or (LoadFLAC and ext == ".flac")) then
-		return true
-	end
-	
-	local type = Entry:match("^(._.-)_")
-	if not type then
-		return true
-	end
-	
-	type = type:lower()
-	local dialog = SkinnerDialog[type]
-	if not dialog then
-		dialog = {}
-		SkinnerDialog[type] = dialog
-	end
-	dialog[#dialog + 1] = "/GameData/skinner/" .. Entry
 	
 	return true
 end)
