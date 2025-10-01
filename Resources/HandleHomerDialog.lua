@@ -1,4 +1,5 @@
 if Level ~= 1 or Mission ~= 3 then
+	 Redirect("skinner\W_Mstart_Skn_01.rsd")
 	return
 end
 
