@@ -9,7 +9,7 @@ if not Type then
 	return
 end
 
-local Dialog = SkinnerDialog[Type]
+local Dialog = Dialog["skinner"][Type]
 if not Dialog then
 	print("Not redirecting \"" .. Path .. "\": No dialog found")
 	return
