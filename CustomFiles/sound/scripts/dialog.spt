@@ -10923,6 +10923,11 @@ create daSoundResourceData named W_Mstart_Hom_02
     AddFilename ( "Homer/W_Mstart_Hom_02.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named W_Mstart_Skn_02.rsd
+{
+    AddFilename ( "Skinner\W_Mstart_Skn_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named W_Mstart_Hom_03
 {
     AddFilename ( "Homer/W_Mstart_Hom_03.rsd" 1.000000 )

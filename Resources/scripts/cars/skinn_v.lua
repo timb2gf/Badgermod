@@ -48,6 +48,7 @@ Game.SetWheelieRange(0.1);
 Game.SetWheelieOffsetY(0.0);
 Game.SetWheelieOffsetZ(-0.5);
 
+Game.SetDriver("none");
 Game.SetCharactersVisible(1);
 Game.SetHasDoors(1);
 Game.SetCharacterScale(0.9);

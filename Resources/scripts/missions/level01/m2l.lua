@@ -1,7 +1,7 @@
 Game.LoadP3DFile("art\\missions\\level01\\m2.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\m1.p3d");
-Game.Game.LoadP3DFile("art\\missions\\level01\\flanpic.p3d");
-Game.Game.LoadP3DFile("art\\missions\\level01\\inhaler.p3d");
+Game.LoadP3DFile("art\\missions\\level01\\flanpic.p3d");
+Game.LoadP3DFile("art\\missions\\level01\\inhaler.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\lwnchair.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\mower.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\tux.p3d");

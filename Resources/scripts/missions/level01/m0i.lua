@@ -44,15 +44,10 @@ Game.AddStage(15);
 	Game.CloseObjective();
 Game.CloseStage();
 
-Game.AddStage();
+Game.AddStage("final");
 	Game.SetStageMessageIndex(153);
 	Game.AddObjective("timer");
-		Game.SetDurationTime(5);
-	Game.CloseObjective();
-Game.CloseStage();
-
-Game.AddStage("final");
-	Game.AddObjective("timer");
+		Game.SetDurationTime(4);
 	Game.CloseObjective();
 Game.CloseStage();
 
