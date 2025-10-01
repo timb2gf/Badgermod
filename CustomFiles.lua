@@ -16,15 +16,18 @@ end
 
 SkinnerDialog = {}
 
-local LoadOgg = IsHackLoaded("OggVorbisSupport")
-local LoadFLAC = IsHackLoaded("FLACSupport")
+local SupportedAudioExtensions = {
+	[".rsd"] = true,
+	[".ogg"] = IsHackLoaded("OggVorbisSupport"),
+	[".flac"] = IsHackLoaded("FLACSupport"),
+}
 DirectoryGetEntries("/GameData/skinner", function(Entry, IsDir)
 	if IsDir then
 		return true
 	end
 	
 	local ext = GetFileExtension(Entry):lower()
-	if not (ext == ".rsd" or (LoadOgg and ext == ".ogg") or (LoadFLAC and ext == ".flac")) then
+	if SupportedAudioExtensions[ext] then
 		return true
 	end
 	
