@@ -1,7 +1,7 @@
 Game.SelectMission("m1");
 
 Game.SetMissionResetPlayerInCar("m1_carstart");
-Game.SetDynaLoadData("l1z2.p3d;l1z1.p3d;l1r7.p3d;");
+Game.SetDynaLoadData("l1r2.p3d;l1r1.p3d;l1z2.p3d;");
 --Game.SetAnimatedCameraName( "cameraShape1" );
 --Game.SetAnimCamMulticontName( "MasterController" );
 
