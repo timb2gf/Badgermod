@@ -1,9 +1,6 @@
 if Level == 1 and Mission == 3 then
 	 Redirect("w_mstart_skn_01.rsd")
 	 Redirect("w_mstart_skn_02.rsd")
---elseif Level == 1 and Mission == 2 then
---	 Redirect("w_mstart_skn_01.rsd")
---	 Redirect("w_mstart_skn_02.rsd")
 else
 	return
 end

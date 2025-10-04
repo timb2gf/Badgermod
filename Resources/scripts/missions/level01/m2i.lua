@@ -69,6 +69,7 @@ Game.AddStage();
 	Game.CloseCondition();
 	--Game.SetFadeOut(1.0);
 	Game.StageStartMusicEvent("M2_drama");
+	Game.SetCompletionDialog("greed","lisa");
 	Game.ShowStageComplete();
 Game.CloseStage();
 
@@ -105,6 +106,7 @@ Game.AddStage("final");
 	Game.AddObjective("timer");
 		Game.SetDurationTime(4);
 		Game.SetMaxTraffic(0); 
+		Game.SetCompletionDialog("excel","burns");
 	Game.CloseObjective();
 Game.CloseStage();
 

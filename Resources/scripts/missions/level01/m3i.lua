@@ -11,8 +11,8 @@ Game.UsePedGroup( 1 );
 
 Game.AddStage(0);
 	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(253);
-	Game.SetHUDIcon("kburger");
+	Game.SetStageMessageIndex(262);
+	Game.SetHUDIcon("church");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("goto");
 		Game.SetDestination("m3_dest_church", "carsphere");
@@ -28,13 +28,12 @@ Game.AddStage(0);
 	Game.CloseCondition();
 Game.CloseStage();
 
-Game.AddStage("final");
-	Game.SetStageMessageIndex(7);
-	Game.SetHUDIcon( "smith_v" );
+Game.AddStage(0);
+	Game.SetStageMessageIndex(263);
+	Game.SetHUDIcon( "bookb_v" );
 	Game.SetStageCharacterModel("skinner");
 	Game.ActivateVehicle("bookb_v","NULL","target");
 	Game.SetVehicleAIParams( "bookb_v", -10, -9 );   -- no shortcuts
-
 	Game.AddStageWaypoint( "m3_lovjo_path1" );
 	Game.AddStageWaypoint( "m3_lovjo_path3" );
 	Game.AddObjective("destroy","neither");
@@ -43,7 +42,6 @@ Game.AddStage("final");
 	Game.AddCondition("race");
 		Game.SetCondTargetVehicle("bookb_v");
 	Game.CloseCondition();
-	Game.AddStageMusicChange();
 	Game.AddCondition("outofvehicle");
 		Game.SetCondTime( 10000 );
 	Game.CloseCondition();
@@ -51,8 +49,35 @@ Game.AddStage("final");
 		Game.SetCondMinHealth( 0.0 );
 		Game.SetCondTargetVehicle( "current" );
 	Game.CloseCondition();
-	Game.StageStartMusicEvent("M3_drama");
+	Game.ShowStageComplete();
 	Game.SetCompletionDialog("convertible", "smithers");
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetStageMessageIndex(264);
+	Game.SetHUDIcon("library");
+	Game.SetStageCharacterModel("skinner");
+	Game.AddObjective("goto");
+		Game.AddNPC ("male2", "m3_librarian");
+		Game.SetDestination("m3_dest_library", "carsphere");
+		Game.SetCollectibleEffect("wrench_collect");
+	Game.CloseObjective();
+	Game.AddCondition( "damage" );
+		Game.SetCondMinHealth( 0.0 );
+		Game.SetCondTargetVehicle( "current" );
+	Game.CloseCondition();
+	Game.ShowStageComplete();
+Game.CloseStage();
+
+Game.AddStage("final");
+	Game.SetMaxTraffic(2);
+	Game.SetStageMessageIndex(265);
+	Game.SetStageCharacterModel("skinner");
+	Game.AddObjective("talkto","neither");
+		Game.AddObjectiveNPCWaypoint( "male2", "m3_librarian_path1" );
+		Game.SetTalkToTarget("male2", 0, 0.2);
+		Game.SetFadeOut( 2 );
+	Game.CloseObjective();
 Game.CloseStage();
 
 Game.CloseMission();

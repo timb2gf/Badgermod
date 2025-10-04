@@ -3798,6 +3798,16 @@ create daSoundResourceData named C_adventure_4_convinit_Hom_L1M7
     AddFilename ( "conversations/C_adventure_4_convinit_Hom_L1M7.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_greed_1_noboxconv_Lis_L1M2
+{
+    AddFilename ( "conversations/C_greed_1_noboxconv_Lis_L1M2.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_excel_1_noboxconv_Bur_L1M2
+{
+    AddFilename ( "conversations/C_excel_1_noboxconv_Bur_L1M2.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_ahab_1_noboxconv_Lis_L3M6
 {
     AddFilename ( "conversations/C_ahab_1_noboxconv_Lis_L3M6.rsd" 1.000000 )
