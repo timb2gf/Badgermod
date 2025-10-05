@@ -29,6 +29,7 @@ Game.AddStage(0);
 		Game.SetCamBestSide("bestside_m3");
 		Game.AddAmbientPcAnimation( "none" );
 		Game.SetDialogueInfo("homer","npd","pedaly",0);
+		Game.SetDialoguePositions("m3_skinnerstart","m3_hiddenbadgerbar","bestside_m3");
 	Game.CloseObjective();
 Game.CloseStage();
 
@@ -41,6 +42,6 @@ Game.CloseMission();
 --dialogue_thinking
 --dialogue_yes
 --dialogue_no
---dialogue_cross_arms
+--dialogue_cross_arms 
 --dialogue_open_arm_hand_gesture
 --dialogue_shake_hand_in_air
