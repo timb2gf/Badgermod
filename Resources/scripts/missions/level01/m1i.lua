@@ -26,7 +26,8 @@ Game.AddStage(0);
 		Game.SetCondTargetVehicle("icecream");
 	Game.CloseCondition();
 	--Game.SetCompletionDialog("skeleton");
-	Game.SetFadeOut(1.0);
+	Game.SetIrisWipe( 0.1 );
+	Game.ShowStageComplete();
 Game.CloseStage();
 
 Game.AddStage(15);
@@ -38,7 +39,6 @@ Game.AddStage(15);
 		Game.AddStageVehicle("icecream","m1_icecream_place","target","Missions\\level01\\M1race.con");
 		Game.SetCollectibleEffect("wrench_collect");  
 		Game.MustActionTrigger();
-		Game.SetFadeOut( 2 );
 	Game.CloseObjective();
 Game.CloseStage();
 

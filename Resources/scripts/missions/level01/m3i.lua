@@ -76,8 +76,21 @@ Game.AddStage("final");
 	Game.AddObjective("talkto","neither");
 		Game.AddObjectiveNPCWaypoint( "male2", "m3_librarian_path1" );
 		Game.SetTalkToTarget("male2", 0, 0.2);
-		Game.SetFadeOut( 2 );
 	Game.CloseObjective();
 Game.CloseStage();
+
+--Game.AddStage("final");
+--	Game.SetStageCharacterModel("skinner");
+--	Game.AddObjective("dialogue");
+--		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
+--		Game.AmbientAnimationRandomize( 0, 0 );
+--		Game.AddAmbientNpcAnimation( "none" );
+--		Game.SetConversationCam( 0, "pc_far" );
+--		Game.SetCamBestSide("m3_librarian_path1");
+--		Game.AddAmbientPcAnimation( "none" );
+--		Game.SetDialogueInfo("homer","male2","miba",0);
+--		Game.SetDialoguePositions("m3_skinnerpos","m3_librarianpos","m3_librarian_path1");
+--	Game.CloseObjective();
+--Game.CloseStage();
 
 Game.CloseMission();
