@@ -10,14 +10,14 @@ Game.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
 
 Game.UsePedGroup(7); 
 
-Game.AddStage(9);
-	Game.SetMaxTraffic(2);
-	Game.SetStageMessageIndex(08);
-	Game.SetHUDIcon( "pwrplant" );
-	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_04.p3d" );
-	Game.AddObjective("goto","both");
-		Game.SetDestination("m4_powerplant", "carsphere");
-		Game.SetCollectibleEffect("wrench_collect");
+Game.AddStage();
+	Game.RESET_TO_HERE();
+	Game.SetStageMessageIndex(166);
+	Game.SetStageCharacterModel("willie");
+	Game.AddObjective("timer");
+		Game.AddStageCharacter ("homer", "m3_skinnerstart", "", "", "");
+		Game.AddStageVehicle("skinn_v","m3_skinnecarrstart","NULL","", "");
+		Game.SetDurationTime(3);
 	Game.CloseObjective();
 Game.CloseStage();
 

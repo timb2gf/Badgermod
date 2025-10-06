@@ -7,6 +7,7 @@ Game.UsePedGroup(7);
 
 Game.AddStage(0);
 	Game.SetStageMessageIndex(252);
+	Game.SetStageCharacterModel("willie");
 	Game.SetHUDIcon( "pwrplant" );
 	Game.AddObjective( "goto" );
 		Game.TurnGotoDialogOff();
