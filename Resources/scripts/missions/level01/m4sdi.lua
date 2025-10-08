@@ -15,14 +15,13 @@ Game.AddStage();
 	Game.SetStageMessageIndex(166);
 	Game.SetStageCharacterModel("willie");
 	Game.AddObjective("timer");
-		Game.AddStageCharacter ("homer", "m3_skinnerstart", "", "", "");
+		Game.AddStageCharacter ("homer", "ambient_willie", "", "", "");
 		Game.AddStageVehicle("skinn_v","m3_skinnecarrstart","NULL","", "");
 		Game.SetDurationTime(3);
 	Game.CloseObjective();
 Game.CloseStage();
 
 Game.AddStage();
-	Game.RESET_TO_HERE();
 	Game.SetStageMessageIndex(154);
 	Game.SetHUDIcon( "wstation" );
 	Game.AddObjective("goto");

@@ -58,7 +58,7 @@ Game.AddStage(0);
 	Game.SetHUDIcon("library");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("goto");
-		Game.AddNPC ("male2", "m3_librarian");
+		Game.AddNPC ("mibach", "m3_librarian");
 		Game.SetDestination("m3_dest_library", "carsphere");
 		Game.SetCollectibleEffect("wrench_collect");
 	Game.CloseObjective();
@@ -69,28 +69,26 @@ Game.AddStage(0);
 	Game.ShowStageComplete();
 Game.CloseStage();
 
-Game.AddStage("final");
+Game.AddStage(0);
 	Game.SetMaxTraffic(2);
 	Game.SetStageMessageIndex(265);
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("talkto","neither");
-		Game.AddObjectiveNPCWaypoint( "male2", "m3_librarian_path1" );
-		Game.SetTalkToTarget("male2", 0, 0.2);
+		Game.AddObjectiveNPCWaypoint( "mibach", "m3_librarian_path1" );
+		Game.SetTalkToTarget("mibach", 0, 0.2);
 	Game.CloseObjective();
 Game.CloseStage();
 
---Game.AddStage("final");
---	Game.SetStageCharacterModel("skinner");
---	Game.AddObjective("dialogue");
---		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
---		Game.AmbientAnimationRandomize( 0, 0 );
---		Game.AddAmbientNpcAnimation( "none" );
---		Game.SetConversationCam( 0, "pc_far" );
---		Game.SetCamBestSide("m3_librarian_path1");
---		Game.AddAmbientPcAnimation( "none" );
---		Game.SetDialogueInfo("homer","male2","miba",0);
---		Game.SetDialoguePositions("m3_skinnerpos","m3_librarianpos","m3_librarian_path1");
---	Game.CloseObjective();
---Game.CloseStage();
+Game.AddStage("final");
+	Game.SetStageCharacterModel("skinner");
+	Game.AddObjective("dialogue");
+		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
+		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.AddAmbientNpcAnimation( "none" );
+		Game.SetConversationCam( 0, "npc_far" );
+		Game.AddAmbientPcAnimation( "none" );
+		Game.SetDialogueInfo("homer","mibach","miba",0);
+	Game.CloseObjective();
+Game.CloseStage();
 
 Game.CloseMission();
