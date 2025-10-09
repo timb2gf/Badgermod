@@ -5,7 +5,7 @@ Game.UsePedGroup( 0 );
 --Game.SetInitialWalk("level1_homer_start");
 
 Game.SetMissionResetPlayerOutCar("m3_skinnerstart", "level1_carstart");
-Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r7.p3d;");
+Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 
 Game.AddStage();
 	Game.RESET_TO_HERE();

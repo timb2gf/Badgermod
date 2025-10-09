@@ -1,7 +1,7 @@
 Game.SelectMission("m3");
 
 Game.SetMissionResetPlayerInCar("m3_skinnecarrstart");
-Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r7.p3d;");
+Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 Game.InitLevelPlayerVehicle("skinn_v","m3_skinnecarrstart","OTHER");
 Game.SetForcedCar();
 
@@ -72,6 +72,7 @@ Game.CloseStage();
 Game.AddStage(0);
 	Game.SetMaxTraffic(2);
 	Game.SetStageMessageIndex(265);
+	Game.SetHUDIcon("mibach");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("talkto","neither");
 		Game.AddObjectiveNPCWaypoint( "mibach", "m3_librarian_path1" );
