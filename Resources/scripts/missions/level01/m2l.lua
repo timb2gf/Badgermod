@@ -12,7 +12,7 @@ Game.LoadP3DFile("art\\chars\\lovejo_m.p3d");
 
 Game.LoadDisposableCar("art\\cars\\burns_v.p3d","burns_v","OTHER");
 Game.LoadDisposableCar("art\\cars\\elect_v.p3d","elect_v","AI");
-Game.LoadDisposableCar("art\\cars\\bookb_v.p3d","elect_v","AI");
+Game.LoadDisposableCar("art\\cars\\bookb_v.p3d","bookb_v","AI");
 
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\location\\school.p3d" );
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\object\\comic.p3d" );

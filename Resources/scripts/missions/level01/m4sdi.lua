@@ -3,7 +3,7 @@ Game.SelectMission("m4sd");
 Game.SetMissionResetPlayerOutCar("ambient_willie", "m4_carstart");
 Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 
-Game.UsePedGroup(7); 
+Game.UsePedGroup(1); 
 
 Game.AddStage();
 	Game.RESET_TO_HERE();

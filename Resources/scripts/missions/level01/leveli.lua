@@ -175,16 +175,16 @@ Game.SetNumChaseCars("1");
 		Game.AddAmbientNPCWaypoint( "moe", "moe_walk2" );
 		Game.AddAmbientNPCWaypoint( "moe", "moe_walk1" );
 		
-if Mission ~= 4 then
-		Game.AddAmbientCharacter("willie", "ambient_willie",  1.3); --zone 3
-		Game.AddAmbientNPCWaypoint( "willie", "willie_walk1" );
-		Game.AddAmbientNPCWaypoint( "willie", "willie_walk2" );
-		Game.AddAmbientNPCWaypoint( "willie", "willie_walk3" );
-		Game.AddAmbientNPCWaypoint( "willie", "willie_walk2" );
-		Game.AddAmbientNPCWaypoint( "willie", "willie_walk1" );
-		else
-	return
-end
+--if Mission ~= 4 then
+--		Game.AddAmbientCharacter("willie", "ambient_willie",  1.3); --zone 3
+--		Game.AddAmbientNPCWaypoint( "willie", "willie_walk1" );
+--		Game.AddAmbientNPCWaypoint( "willie", "willie_walk2" );
+--		Game.AddAmbientNPCWaypoint( "willie", "willie_walk3" );
+--		Game.AddAmbientNPCWaypoint( "willie", "willie_walk2" );
+--		Game.AddAmbientNPCWaypoint( "willie", "willie_walk1" );
+--		else
+--	return
+--end
 
 --ADDING VEHICLE PURCHASE POINTS
 --
