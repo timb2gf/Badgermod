@@ -24,12 +24,13 @@ Game.AddStage(0);
 		Game.AddNPC ("npd", "m3_hiddenbadgerbar");
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
-		Game.AddAmbientNpcAnimation( "none" );
+		Game.AddAmbientNpcAnimation( "dialogue_hands_in_air" );
 		Game.SetConversationCam( 0, "pc_far" );
 		Game.SetCamBestSide("bestside_m3");
-		Game.AddAmbientPcAnimation( "none" );
+		Game.AddAmbientPcAnimation( "dialogue_hands_in_air" );
 		Game.SetDialogueInfo("homer","npd","pedaly",0);
 		Game.SetDialoguePositions("m3_skinnerstart","m3_hiddenbadgerbar","bestside_m3");
+		Game.SetSwapPlayerLocator("m3_skinnecarrstart");
 	Game.CloseObjective();
 Game.CloseStage();
 

@@ -3820,17 +3820,17 @@ create daSoundResourceData named C_arrest_1_noboxconv_Wig_L5M6
 }
 create daSoundResourceData named W_mvic_Skn_01
 {
-    AddFilename ( "conversations/W_mvic_Skn_01.rsd" 1.000000 )
+    AddFilename ( "Skinner/W_mvic_Skn_01.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_mvic_Skn_02
 {
-    AddFilename ( "conversations/W_mvic_Skn_02.rsd" 1.000000 )
+    AddFilename ( "Skinner/W_mvic_Skn_02.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_mvic_Skn_03
 {
-    AddFilename ( "conversations/W_mvic_Skn_03.rsd" 1.000000 )
+    AddFilename ( "Skinner/W_mvic_Skn_03.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_ashtray_1_noboxconv_Hom_L7M5
@@ -19461,5 +19461,25 @@ create daSoundResourceData named P_NHitByC_Zm4_03
 create daSoundResourceData named C_pedaly_1_convinit_Skn_L1M3
 {
     AddFilename ( "conversations/C_pedaly_1_convinit_Skn_L1M3.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_mstart_Wil_01
+{
+    AddFilename ( "Willie/W_mstart_Wil_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_mstart_Wil_02
+{
+    AddFilename ( "Willie/W_mstart_Wil_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_mstart_Wil_03
+{
+    AddFilename ( "Willie/W_mstart_Wil_03.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_mvic_Wil_01
+{
+    AddFilename ( "Willie/W_mvic_Wil_01.rsd" 1.000000 )
     SetStreaming ( true )
 }
