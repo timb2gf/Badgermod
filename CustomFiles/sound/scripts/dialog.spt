@@ -3798,6 +3798,11 @@ create daSoundResourceData named C_adventure_4_convinit_Hom_L1M7
     AddFilename ( "conversations/C_adventure_4_convinit_Hom_L1M7.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_scotland_1_convinit_Wil_L1M4
+{
+    AddFilename ( "conversations/C_scotland_1_convinit_Wil_L1M4.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_greed_1_noboxconv_Lis_L1M2
 {
     AddFilename ( "conversations/C_greed_1_noboxconv_Lis_L1M2.rsd" 1.000000 )
@@ -3806,6 +3811,11 @@ create daSoundResourceData named C_greed_1_noboxconv_Lis_L1M2
 create daSoundResourceData named C_excel_1_noboxconv_Bur_L1M2
 {
     AddFilename ( "conversations/C_excel_1_noboxconv_Bur_L1M2.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_destroy_1_noboxconv_Rev_L1M3
+{
+    AddFilename ( "conversations/C_destroy_1_noboxconv_Rev_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_ahab_1_noboxconv_Lis_L3M6
@@ -3820,17 +3830,17 @@ create daSoundResourceData named C_arrest_1_noboxconv_Wig_L5M6
 }
 create daSoundResourceData named W_mvic_Skn_01
 {
-    AddFilename ( "Skinner/W_mvic_Skn_01.rsd" 1.000000 )
+    AddFilename ( "conversations/W_mvic_Skn_01.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_mvic_Skn_02
 {
-    AddFilename ( "Skinner/W_mvic_Skn_02.rsd" 1.000000 )
+    AddFilename ( "conversations/W_mvic_Skn_02.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_mvic_Skn_03
 {
-    AddFilename ( "Skinner/W_mvic_Skn_03.rsd" 1.000000 )
+    AddFilename ( "conversations/W_mvic_Skn_03.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_ashtray_1_noboxconv_Hom_L7M5

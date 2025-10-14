@@ -60,12 +60,24 @@ Game.AddStage();
 	Game.SetSwapPlayerLocator("m4_willieend");
 Game.CloseStage();
 
-Game.AddStage("final");
-	Game.SetStageMessageIndex(11);
+Game.AddStage(0);
 	Game.SetStageCharacterModel("willie");
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "m4_willieend", "", "", "");
-		Game.SetDurationTime(3);
+		Game.SetDurationTime(1);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage("final");
+	Game.SetStageCharacterModel("willie");
+	Game.AddObjective("dialogue");
+		Game.AddNPC ("npd", "m4_hiddenbadgerbar");
+		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
+		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.AddAmbientNpcAnimation( "none" );
+		Game.SetConversationCam( 0, "pc_far" );
+		Game.AddAmbientPcAnimation( "dialogue_hands_in_air" );
+		Game.SetDialogueInfo("homer","npd","scotland",0);
 	Game.CloseObjective();
 Game.CloseStage();
 

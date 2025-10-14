@@ -224,7 +224,6 @@ Game.ClosePedGroup( );
 
 --R2
 Game.CreatePedGroup( 2 );
-Game.AddPed( "male2", 2 );
 Game.AddPed( "olady3", 2 );
 Game.AddPed( "olady3", 2 );
 Game.AddPed( "girl1", 2 );

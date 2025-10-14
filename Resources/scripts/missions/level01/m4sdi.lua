@@ -7,7 +7,6 @@ Game.UsePedGroup(1);
 
 Game.AddStage();
 	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(166);
 	Game.SetStageCharacterModel("willie");
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "ambient_willie", "", "", "");

@@ -22,6 +22,7 @@ Game.AddStage(0);
 	Game.AddCondition("outofvehicle");
 		Game.SetCondTime( 10000 );
 	Game.CloseCondition();
+	Game.SetMaxTraffic(2); 
 	Game.AddCondition( "damage" );
 		Game.SetCondMinHealth( 0.0 );
 		Game.SetCondTargetVehicle( "current" );
@@ -50,7 +51,7 @@ Game.AddStage(0);
 		Game.SetCondTargetVehicle( "current" );
 	Game.CloseCondition();
 	Game.ShowStageComplete();
-	Game.SetCompletionDialog("convertible", "smithers");
+	Game.SetCompletionDialog("destroy","lovejoy");
 Game.CloseStage();
 
 Game.AddStage(0);

@@ -40,7 +40,7 @@ if Level == 1 then
                 print("Not redirecting \"" .. Path .. "\": No dialog found.")
             end
         else
-            print("Not redirecting \"" .. Path .. "\": No type found for willie.")
+            print("Not redirecting \"" .. Path .. "\": No dialog found.")
         end
     else
         return
