@@ -258,7 +258,6 @@ Game.ClosePedGroup( );
 Game.CreatePedGroup( 6 );
 Game.AddPed( "joger1", 2 );
 Game.AddPed( "male5", 1 );
-Game.AddPed( "male2", 2 );
 Game.AddPed( "fem2", 2 );
 Game.ClosePedGroup( );
 

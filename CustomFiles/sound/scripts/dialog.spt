@@ -19468,9 +19468,9 @@ create daSoundResourceData named P_NHitByC_Zm4_03
     AddFilename ( "Zombie4/P_NHitByC_Zm4_03.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_pedaly_1_convinit_Hom_L1M3
+create daSoundResourceData named C_pedaly_1_convinit_Skn_L1M3
 {
-    AddFilename ( "conversations/C_pedaly_1_convinit_Hom_L1M3.rsd" 1.000000 )
+    AddFilename ( "conversations/C_pedaly_1_convinit_Skn_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_mstart_Wil_01
