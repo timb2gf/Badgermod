@@ -112,43 +112,31 @@
 		<Beat>2</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="M4_Main_region" TargetRegion="M4_10sec_region" SourceTime="25" SourceStart="479.999969" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M5_Main_region" TargetRegion="M7_end_Pos_region" SourceTime="0" SourceStart="959.999939" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="M4_Main_region" TargetRegion="M4_end_Pos_region" SourceTime="0" SourceStart="959.999939" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="anything" TargetRegion="M7_end_Neg_region" SourceTime="0" SourceStart="0.5" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="M4_10sec_region" TargetRegion="M4_end_Pos_region" SourceTime="0" SourceStart="959.999939" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M4_main_region" TargetRegion="M4_end_Pos_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="anything" TargetRegion="M4_end_Neg_region" SourceTime="0" SourceStart="0.5" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M4_main_region" TargetRegion="M4_end_Neg_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="M5_main_region" TargetRegion="M5_end_Pos_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
-		<Beat>1</Beat>
-		<Beat>2</Beat>
-		<Beat>3</Beat>
-		<Beat>4</Beat>
-	</FadeTransition>
-	<FadeTransition SourceRegion="M5_main_region" TargetRegion="M5_end_Neg_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
-		<Beat>1</Beat>
-		<Beat>2</Beat>
-		<Beat>3</Beat>
-		<Beat>4</Beat>
-	</FadeTransition>
-	<FadeTransition SourceRegion="M5_main_region" TargetRegion="M5_end_Sus_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M4_main_region" TargetRegion="M4_end_Sus_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
@@ -190,7 +178,7 @@
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="M7_main_region" TargetRegion="M7_drama_region" SourceTime="5" SourceStart="705.8823" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M5_Main_region" TargetRegion="M7_drama_region" SourceTime="5" SourceStart="705.8823" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
@@ -400,8 +388,17 @@
 	<Event Name="M3_get_out_of_car">
 		<PlayRegionAction Region="M3_end_Sus_region" RegionResumeType="Restart" />
 	</Event>
+	<Event Name="M5_start">
+		<PlayRegionAction Region="M5_Main_region" RegionResumeType="Restart" />
+	</Event>
+	<Event Name="M7_win">
+		<PlayRegionAction Region="M7_end_Pos_region" RegionResumeType="Restart" />
+	</Event>
+	<Event Name="M7_lose">
+		<PlayRegionAction Region="M7_end_Neg_region" RegionResumeType="Restart" />
+	</Event>
 	<Event Name="M4_start">
-		<PlayRegionAction Region="M4_Main_region" RegionResumeType="Restart" />
+		<PlayRegionAction Region="M4_main_region" RegionResumeType="Resume" />
 	</Event>
 	<Event Name="M4_win">
 		<PlayRegionAction Region="M4_end_Pos_region" RegionResumeType="Restart" />
@@ -409,20 +406,8 @@
 	<Event Name="M4_lose">
 		<PlayRegionAction Region="M4_end_Neg_region" RegionResumeType="Restart" />
 	</Event>
-	<Event Name="M4_10sec_to_go">
-		<PlayRegionAction Region="M4_10sec_region" RegionResumeType="Restart" />
-	</Event>
-	<Event Name="M5_start">
-		<PlayRegionAction Region="M5_main_region" RegionResumeType="Resume" />
-	</Event>
-	<Event Name="M5_win">
-		<PlayRegionAction Region="M5_end_Pos_region" RegionResumeType="Restart" />
-	</Event>
-	<Event Name="M5_lose">
-		<PlayRegionAction Region="M5_end_Neg_region" RegionResumeType="Restart" />
-	</Event>
-	<Event Name="M5_get_out_of_car">
-		<PlayRegionAction Region="M5_main_region" RegionResumeType="Restart" />
+	<Event Name="M4_get_out_of_car">
+		<PlayRegionAction Region="M4_main_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="M6_start">
 		<PlayRegionAction Region="M6_start_region" RegionResumeType="Resume" />
@@ -436,8 +421,8 @@
 	<Event Name="M6_get_out_of_car">
 		<PlayRegionAction Region="M6_end_Sus_region" RegionResumeType="Restart" />
 	</Event>
-	<Event Name="M7_start">
-		<PlayRegionAction Region="M7_main_region" RegionResumeType="Resume" />
+	<Event Name="M5_start">
+		<PlayRegionAction Region="M5_Main_region" RegionResumeType="Resume" />
 	</Event>
 	<Event Name="M7_drama">
 		<PlayRegionAction Region="M7_drama_region" RegionResumeType="Resume" />
@@ -618,8 +603,12 @@
 	<RSDFile FileName="Bart_Chase01_End_Neg1" Size="544088" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Bart_Chase01_End_Neg3" Size="408556" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Bart_Chase01_End_Sus" Size="324380" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Gogo_Main" Size="16943464" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Gogo_Drama_Pickup" Size="75348" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Gogo_Drama" Size="7046052" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Gogo_End_Pos" Size="713500" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Gogo_End_Neg" Size="544088" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Gogo_End_Sus" Size="518144" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="In_game01b_Main" Size="4880636" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="In_game01b_Cymbal" Size="75776" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="In_game01b_Drama" Size="4339456" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
@@ -627,7 +616,6 @@
 	<RSDFile FileName="In_game01b_End_Neg_b" Size="811004" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="In_game01b_End_Sus" Size="243708" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="PowerPlant_Main" Size="14747648" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
-	<RSDFile FileName="PowerPlant_10sec" Size="963072" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="PowerPlant_End_Pos" Size="434172" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="PowerPlant_End_Neg" Size="610300" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Motown_Intro" Size="13643396" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
@@ -784,13 +772,12 @@
 	<Stream Name="In_game01b_End_Neg_b" RSDFile="In_game01b_End_Neg_b" Streamed="true" TempoTrack="170 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="In_game01b_End_Sus" RSDFile="In_game01b_End_Sus" Streamed="true" TempoTrack="170 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="PowerPlant_Main" RSDFile="PowerPlant_Main" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
-	<Stream Name="PowerPlant_10sec" RSDFile="PowerPlant_10sec" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="PowerPlant_End_Pos" RSDFile="PowerPlant_End_Pos" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="PowerPlant_End_Neg" RSDFile="PowerPlant_End_Neg" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
-	<Stream Name="M5_Intro" RSDFile="Motown_Intro" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
-	<Stream Name="M5_End_Pos" RSDFile="Motown_End_Pos" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
-	<Stream Name="M5_End_Neg" RSDFile="Motown_End_Neg" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
-	<Stream Name="M5_End_Sus" RSDFile="Motown_End_Sus" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="M4_Intro" RSDFile="Motown_Intro" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="M4_End_Pos" RSDFile="Motown_End_Pos" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="M4_End_Neg" RSDFile="Motown_End_Neg" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="M4_End_Sus" RSDFile="Motown_End_Sus" Streamed="true" TempoTrack="125 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Collection01d_Pickup" RSDFile="Collection01d_Pickup_b4" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Collection01d_Main" RSDFile="Collection01d_Main" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Collection01d_Drama" RSDFile="Collection01d_Drama" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
@@ -1195,59 +1182,52 @@
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M4_Main_region" Volume="1">
+	<Region Name="M5_Main_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent>
-				<StreamEvent Name="PowerPlant_Main" />
+				<StreamEvent Name="DuffBeer_Spoof" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M4_10sec_region" Volume="1">
-		<Layer Name="l" Constant="true" Volume="1">
-			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="PowerPlant_10sec" />
-			</LogicRepeatEvent>
-		</Layer>
-	</Region>
-	<Region Name="M4_end_Pos_region" Volume="1">
+	<Region Name="M7_end_Pos_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
 				<StreamEvent Name="PowerPlant_End_Pos" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M4_end_Neg_region" Volume="1">
+	<Region Name="M7_end_Neg_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
 				<StreamEvent Name="PowerPlant_End_Neg" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M5_main_region" Volume="1">
+	<Region Name="M4_main_region" Volume="1">
 		<Layer Name="music" Constant="true" Volume="1">
 			<LogicRepeatEvent>
-				<StreamEvent Name="M5_Intro" />
+				<StreamEvent Name="M4_Intro" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M5_end_Pos_region" Volume="1">
+	<Region Name="M4_end_Pos_region" Volume="1">
 		<Layer Name="music" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="M5_End_Pos" />
+				<StreamEvent Name="M4_End_Pos" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M5_end_Neg_region" Volume="1">
+	<Region Name="M4_end_Neg_region" Volume="1">
 		<Layer Name="music" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="M5_End_Neg" />
+				<StreamEvent Name="M4_End_Neg" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M5_end_Sus_region" ExitRegion="OF_explore_region" Volume="1">
+	<Region Name="M4_end_Sus_region" ExitRegion="OF_explore_region" Volume="1">
 		<Layer Name="music" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="M5_End_Sus" />
+				<StreamEvent Name="M4_End_Sus" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
@@ -1281,7 +1261,7 @@
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="M7_main_region" Volume="1">
+	<Region Name="M5_Main_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<StreamEvent Name="Orch_Chase01_Pickup" />
 			<LogicRepeatEvent>

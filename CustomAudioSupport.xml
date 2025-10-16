@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomAudioSupport MusicSamplingRate="24000">
+    <Level Number="1" StartAmbienceEventIndex="7">
+		<Mission Index="0" StartAmbienceEventIndex="6" />
+		<Mission Index="1" StartAmbienceEventIndex="6" />
+		<Mission Index="2" StartAmbienceEventIndex="39" />
+		<Mission Index="3" StartAmbienceEventIndex="6" />
+		<Mission Index="4" StartAmbienceEventIndex="6" />
+		<Mission Index="5" StartAmbienceEventIndex="6" />
+		<Mission Index="6" StartAmbienceEventIndex="6" />
+		<Mission Index="7" StartAmbienceEventIndex="6" />
+	</Level>
+</CustomAudioSupport>

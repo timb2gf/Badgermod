@@ -190,8 +190,8 @@ Game.SetNumChaseCars("1");
 --
 Game.AddPurchaseCarReward( "gil", "gil", "npd", "gil_loc", 1.3, "gil_car" );
 Game.AddPurchaseCarNPCWaypoint("gil", "gil_walk1");
-Game.AddPurchaseCarReward( "simpson", "barney", "npd", "barney_loc", 1.3, "barney_car" );
-Game.AddPurchaseCarNPCWaypoint("barney", "barney_walk1");
+Game.AddPurchaseCarReward( "simpson", "otto", "npd", "barney_loc", 1.3, "barney_car" );
+Game.AddPurchaseCarNPCWaypoint("otto", "barney_walk1");
 
 --ADDING TRAFFIC GROUP FOR LEVEL 01--
 --

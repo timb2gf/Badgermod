@@ -74,10 +74,11 @@ Game.AddStage("final");
 		Game.AddNPC ("npd", "m4_hiddenbadgerbar");
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.AddAmbientPcAnimation( "dialogue_shaking_fist" );
 		Game.AddAmbientNpcAnimation( "none" );
 		Game.SetConversationCam( 0, "pc_far" );
-		Game.AddAmbientPcAnimation( "dialogue_hands_in_air" );
 		Game.SetDialogueInfo("homer","npd","scotland",0);
+		Game.SetDialoguePositions("m4_willieend","m4_hiddenbadgerbar","bestside_m4");
 	Game.CloseObjective();
 Game.CloseStage();
 

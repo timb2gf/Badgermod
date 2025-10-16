@@ -19,16 +19,17 @@ Game.AddStage();
 Game.CloseStage();
 
 Game.AddStage(0);
-	Game.SetStageCharacterModel("skinner");
+	Game.SetStageCharacterModel("mibach");
 	Game.AddObjective("dialogue");
 		Game.AddNPC ("npd", "m3_hiddenbadgerbar");
+		Game.AddNPC ("skinner", "m3_skinnerstart");
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
 		Game.AddAmbientNpcAnimation( "dialogue_hands_in_air" );
 		Game.SetConversationCam( 0, "pc_far" );
 		Game.SetCamBestSide("bestside_m3");
 		Game.AddAmbientPcAnimation( "dialogue_hands_in_air" );
-		Game.SetDialogueInfo("homer","npd","pedaly",0);
+		Game.SetDialogueInfo("skinner","npd","pedaly",0);
 		Game.SetDialoguePositions("m3_skinnerstart","m3_hiddenbadgerbar","bestside_m3");
 		Game.SetSwapPlayerLocator("m3_skinnecarrstart");
 	Game.CloseObjective();

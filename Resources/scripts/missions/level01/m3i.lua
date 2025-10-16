@@ -59,7 +59,7 @@ Game.AddStage(0);
 	Game.SetHUDIcon("library");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("goto");
-		Game.AddNPC ("mibach", "m3_librarian");
+		Game.AddNPC ("realmi", "m3_librarian");
 		Game.SetDestination("m3_dest_library", "carsphere");
 		Game.SetCollectibleEffect("wrench_collect");
 	Game.CloseObjective();
@@ -76,8 +76,8 @@ Game.AddStage(0);
 	Game.SetHUDIcon("mibach");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("talkto","neither");
-		Game.AddObjectiveNPCWaypoint( "mibach", "m3_librarian_path1" );
-		Game.SetTalkToTarget("mibach", 0, 0.2);
+		Game.AddObjectiveNPCWaypoint( "realmi", "m3_librarian_path1" );
+		Game.SetTalkToTarget("realmi", 0, 0.2);
 	Game.CloseObjective();
 Game.CloseStage();
 
@@ -89,7 +89,7 @@ Game.AddStage("final");
 		Game.AddAmbientNpcAnimation( "none" );
 		Game.SetConversationCam( 0, "npc_far" );
 		Game.AddAmbientPcAnimation( "none" );
-		Game.SetDialogueInfo("homer","mibach","miba",0);
+		Game.SetDialogueInfo("homer","realmi","miba",0);
 	Game.CloseObjective();
 Game.CloseStage();
 
