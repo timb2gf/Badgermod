@@ -84,7 +84,7 @@ Game.AddStage(0);
 	Game.CloseCondition();
 Game.CloseStage();
 
-Game.AddStage("final");
+Game.AddStage();
 	Game.SetStageMessageIndex(268);
 	Game.SetHUDIcon("spack");
 	Game.SetStageCharacterModel("barney", "barney");
@@ -99,6 +99,19 @@ Game.AddStage("final");
 		Game.AddCollectible("m5_ppob8","spack");
 		Game.AddCollectible("m5_ppob9","spack");
 		Game.AddCollectible("m5_ppob10","spack");
+		Game.SetFadeOut(1.0);
+		Game.SwapInDefaultCar();
+		Game.SetSwapDefaultCarLocator("m5_barneycar");
+		Game.SetSwapForcedCarLocator("m5_barneycar");
+		Game.SetSwapPlayerLocator("m5_barneyend");
+		Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage("final");
+	Game.SetStageCharacterModel("barney", "barney");
+	Game.AddObjective("timer");
+		Game.AddStageCharacter ("homer", "m5_barneyend", "", "", "");
+		Game.SetDurationTime(3);
 	Game.CloseObjective();
 Game.CloseStage();
 

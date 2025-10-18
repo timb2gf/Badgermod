@@ -7,7 +7,7 @@ Game.UsePedGroup(1);
 
 Game.AddStage();
 	Game.RESET_TO_HERE();
-	Game.SetStageCharacterModel("barney");
+	Game.SetStageCharacterModel("barney", "barney");
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "m5_barney", "", "", "");
 		Game.AddStageVehicle("plowk_v","m5_barneycar","NULL","", "");
