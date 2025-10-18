@@ -42,6 +42,29 @@ if Level == 1 then
         else
             print("Not redirecting \"" .. Path .. "\": No dialog found.")
         end
+		
+		elseif Mission == 5 then
+        Redirect("w_mstart_brn_01.rsd")
+        Redirect("w_mstart_brn_02.rsd")
+        Redirect("w_mstart_brn_03.rsd")
+        Redirect("w_mvic_brn_01.rsd")
+		Redirect("w_mvic_brn_02.rsd")
+        
+        local Path = GetPath()
+        local Type = Path:lower():match("^homer[\\/](._.-)_")
+        
+        if Type then
+            local Dialog = Dialog["barney"][Type]
+            if Dialog then
+                local NewPath = Dialog[math.random(#Dialog)]
+                print("Redirecting \"" .. Path .. "\" to \"" .. NewPath .. "\".")
+                Redirect(NewPath)
+            else
+                print("Not redirecting \"" .. Path .. "\": No dialog found.")
+            end
+        else
+            print("Not redirecting \"" .. Path .. "\": No dialog found.")
+        end
     else
         return
     end

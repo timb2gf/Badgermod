@@ -10964,6 +10964,31 @@ create daSoundResourceData named W_Mstart_Skn_01.rsd
     AddFilename ( "Skinner\W_Mstart_Skn_01.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named W_Mstart_Brn_01.rsd
+{
+    AddFilename ( "Barney\W_Mstart_Brn_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mstart_Brn_02.rsd
+{
+    AddFilename ( "Barney\W_Mstart_Brn_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mstart_Brn_03.rsd
+{
+    AddFilename ( "Barney\W_Mstart_Brn_03.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mvic_Brn_01.rsd
+{
+    AddFilename ( "Barney\W_Mvic_Brn_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mvic_Brn_02.rsd
+{
+    AddFilename ( "Barney\W_Mvic_Brn_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named W_Mstart_Hom_02
 {
     AddFilename ( "Homer/W_Mstart_Hom_02.rsd" 1.000000 )

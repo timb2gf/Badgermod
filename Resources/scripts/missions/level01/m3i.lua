@@ -15,6 +15,7 @@ Game.AddStage(0);
 	Game.SetHUDIcon("church");
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("goto");
+		Game.RemoveNPC ("skinner");
 		Game.SetDestination("m3_dest_church", "carsphere");
 		Game.AddStageVehicle("bookb_v","m3_lovejo_carstart","NULL","Missions\\level01\\M3dest.con", "lovejoy");
 		Game.SetCollectibleEffect("wrench_collect");

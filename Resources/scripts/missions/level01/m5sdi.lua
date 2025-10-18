@@ -23,7 +23,7 @@ Game.AddStage(0);
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
 		Game.AddAmbientNpcAnimation( "dialogue_scratch_head" );
-		Game.SetConversationCam( 0, "npc_far" );
+		Game.SetConversationCam( 0, "pc_far" );
 		Game.AddAmbientPcAnimation( "dialogue_scratch_head" );
 		Game.SetCamBestSide("m5_bestcam");
 		Game.SetDialogueInfo("barney","npd","belch",0);
