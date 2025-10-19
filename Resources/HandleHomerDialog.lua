@@ -85,7 +85,7 @@ if Level == 1 then
         else
             print("Not redirecting \"" .. Path .. "\": No dialog found.")
         end
-    else
+    else --This has to be here for the script to work
         return
     end
 end

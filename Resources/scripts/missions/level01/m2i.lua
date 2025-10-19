@@ -70,7 +70,6 @@ Game.AddStage();
 	--Game.SetFadeOut(1.0);
 	Game.StageStartMusicEvent("M2_drama");
 	Game.SetCompletionDialog("greed","lisa");
-	Game.SetCompletionDialog("cool","burns");
 	Game.ShowStageComplete();
 Game.CloseStage();
 
@@ -83,6 +82,7 @@ Game.AddStage(3);
 		Game.SetDestination("m1_school_sd", "carsphere");
 	Game.CloseObjective();
 	Game.StageStartMusicEvent("M2_start");
+	Game.SetCompletionDialog("cool","burns");
 	Game.ShowStageComplete();
 Game.CloseStage();
 
