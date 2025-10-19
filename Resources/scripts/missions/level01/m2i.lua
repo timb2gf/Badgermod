@@ -70,6 +70,7 @@ Game.AddStage();
 	--Game.SetFadeOut(1.0);
 	Game.StageStartMusicEvent("M2_drama");
 	Game.SetCompletionDialog("greed","lisa");
+	Game.SetCompletionDialog("cool","burns");
 	Game.ShowStageComplete();
 Game.CloseStage();
 

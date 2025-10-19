@@ -49,7 +49,7 @@ Game.AddStage();
 		Game.SetCollectibleEffect("bonestorm_explosion");
 	Game.CloseObjective();
 	Game.AddCondition("followdistance");
-		Game.SetFollowDistances(0,200);
+		Game.SetFollowDistances(0,150);
 		Game.SetCondTargetVehicle("smith_v");
 	Game.CloseCondition();
 	Game.ShowStageComplete();

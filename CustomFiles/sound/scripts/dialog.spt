@@ -3818,6 +3818,11 @@ create daSoundResourceData named C_destroy_1_noboxconv_Rev_L1M3
     AddFilename ( "conversations/C_destroy_1_noboxconv_Rev_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_cool_1_noboxconv_Bur_L1M2
+{
+    AddFilename ( "conversations/C_cool_1_noboxconv_Bur_L1M2.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_ahab_1_noboxconv_Lis_L3M6
 {
     AddFilename ( "conversations/C_ahab_1_noboxconv_Lis_L3M6.rsd" 1.000000 )
@@ -10972,6 +10977,16 @@ create daSoundResourceData named W_Mstart_Brn_01.rsd
 create daSoundResourceData named W_Mstart_Brn_02.rsd
 {
     AddFilename ( "Barney\W_Mstart_Brn_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mstart_Bur_01.rsd
+{
+    AddFilename ( "Barney\W_Mstart_Bur_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mstart_Bur_02.rsd
+{
+    AddFilename ( "Barney\W_Mstart_Bur_02.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_Mstart_Brn_03.rsd
