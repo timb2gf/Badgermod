@@ -46,6 +46,7 @@ Game.AddStage();
 	Game.SetStageMessageIndex(166);
 	Game.AddObjective("timer");
 		Game.SetDurationTime(5);
+		Game.SetCompletionDialog("work","homer");
 	Game.CloseObjective();
 Game.CloseStage();
 

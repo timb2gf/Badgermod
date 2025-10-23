@@ -1,9 +1,16 @@
 Game.SelectMission("m6sd");
 
 Game.SetMissionResetPlayerOutCar("m4_homer_start", "m4_carstart");
-ame.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
+Game.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
 
 Game.UsePedGroup(3); 
+
+Game.AddStage();
+	Game.AddObjective("timer");
+		Game.AddStageCharacter ("homer", "m4_homer_start", "", "current", "m4_carstart");
+		Game.SetDurationTime(3);
+	Game.CloseObjective();
+Game.CloseStage();
 
 Game.AddStage(0);
 	Game.SetStageMessageIndex(12);

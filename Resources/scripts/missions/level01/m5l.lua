@@ -7,3 +7,4 @@ Game.LoadDisposableCar("art\\cars\\plowk_v.p3d","plowk_v","OTHER");
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\vehicle\\cvan_v.p3d" );
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\object\\spack.p3d" );
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\location\\moehouse.p3d" );
+Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\location\\pwrplant.p3d" );

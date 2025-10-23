@@ -6779,6 +6779,11 @@ create daSoundResourceData named C_project_4_convinit_Hom_L1M1
     AddFilename ( "conversations/C_project_4_convinit_Hom_L1M1.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_work_1_noboxconv_Hom_L1M1
+{
+    AddFilename ( "conversations/C_work_1_noboxconv_Hom_L1M1.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_proof_1_noboxconv_Brt_L6M5
 {
     AddFilename ( "conversations/C_proof_1_noboxconv_Brt_L6M5.rsd" 1.000000 )

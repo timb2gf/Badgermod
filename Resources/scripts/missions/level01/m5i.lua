@@ -71,8 +71,8 @@ Game.AddStage();
 Game.CloseStage();
 
 Game.AddStage(0);
-	Game.SetStageMessageIndex(269);
-	Game.SetHUDIcon("moehouse");
+	Game.SetStageMessageIndex(157);
+	Game.SetHUDIcon("pwrplant");
 	Game.SetStageCharacterModel("barney", "barney");
 	Game.AddObjective("goto");
 		Game.SetDestination("m5_pp", "carsphere");
