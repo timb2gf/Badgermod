@@ -7,53 +7,47 @@ Game.UsePedGroup(3);
 
 Game.AddStage();
 	Game.AddObjective("timer");
-		Game.AddStageCharacter ("homer", "m4_homer_start", "", "current", "m4_carstart");
+		Game.AddStageCharacter ("homer", "m4_plocator", "", "current", "m4_carstart");
+		Game.AddNPC("burns", "m4_carl_sd");
 		Game.SetDurationTime(3);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.RESET_TO_HERE();
+	Game.SetStageMessageIndex(254);
+	Game.SetHUDIcon( "wstation" );
+	Game.AddObjective("goto");
+		Game.TurnGotoDialogOff();
+		Game.SetDestination("m4_locator_sd", "triggersphere");
+		Game.SetCollectibleEffect("wrench_collect");
+		Game.MustActionTrigger();
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.AddObjective("timer");
+		Game.AddStageCharacter ("homer", "m6_homer", "", "current", "m4_homer_start");
+		Game.SetDurationTime(3);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.AddObjective("dialogue");
+		Game.AddNPC("npd", "m6_hiddenbadgerbar");
+		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
+		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.SetConversationCam( 0, "pc_near" );
+		Game.SetDialogueInfo("homer","npd","sucks",0);
+		Game.SetDialoguePositions("m6_homer","m6_hiddenbadgerbar","m6_bestcam");
 	Game.CloseObjective();
 Game.CloseStage();
 
 Game.AddStage(0);
 	Game.SetStageMessageIndex(12);
 	Game.AddObjective("getin", "neither");
+	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_06.p3d" );
 		Game.SetObjTargetVehicle("current");
-	Game.CloseObjective();
-Game.CloseStage();
-
-Game.AddStage(5);
-	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(00);
-	Game.SetHUDIcon("marage");
-	Game.AddObjective("talkto");
-		Game.AddNPC("marge", "m6_marge_sd");
-		Game.AddObjectiveNPCWaypoint( "marge", "m6_marge_walk_2" );
-		Game.AddObjectiveNPCWaypoint( "marge", "m6_marge_walk_1" );
-		Game.SetTalkToTarget("marge", 0, 0.2);
-	Game.CloseObjective();
-Game.CloseStage();
-
-Game.AddStage(0);
-	Game.AddObjective("dialogue");
-		Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_06.p3d" );
-		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
-		Game.AmbientAnimationRandomize( 0, 0 );
-		Game.SetConversationCam( 0, "pc_near" );
-		Game.SetConversationCam( 1, "npc_far" );
-		Game.SetConversationCam( 2, "pc_near" );
-		Game.SetConversationCam( 3, "npc_near" );
-		Game.SetConversationCam( 4, "pc_far" );
-		Game.AddAmbientNpcAnimation( "none" );
-		Game.AddAmbientNpcAnimation( "dialogue_cross_arms" );
-		Game.AddAmbientNpcAnimation( "none" );
-		Game.AddAmbientNpcAnimation( "dialogue_shaking_fist" );
-		Game.AddAmbientNpcAnimation( "none" );
-		Game.AddAmbientPcAnimation( "dialogue_hands_in_air" );
-		Game.AddAmbientPcAnimation( "none" );
-		Game.AddAmbientPcAnimation( "dialogue_yes" );
-		Game.AddAmbientPcAnimation( "none" );
-		Game.AddAmbientPcAnimation( "dialogue_scratch_head" );
-		Game.SetCamBestSide( "m6_end");
-		Game.SetDialogueInfo("homer","marge","violent",0);
-		Game.SetDialoguePositions("m6_homer","m6_homer_start","m6_marge_walk_2");
 	Game.CloseObjective();
 Game.CloseStage();
 

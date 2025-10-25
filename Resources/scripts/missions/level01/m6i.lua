@@ -14,7 +14,7 @@ Game.AddStage(); -- destroy the video games!
 	Game.RESET_TO_HERE();
 	Game.SetStageMessageIndex(16);
 	Game.SetHUDIcon( "bonestor" );
-	Game.AddStageVehicle("cBone","m6_video_carstart","target","Missions\level01\M6dump.con", "jasper");
+	Game.AddStageVehicle("cBone","m6_video_carstart","target","Missions\\level01\\M6dump.con", "jasper");
 	Game.SetVehicleAIParams( "cBone", -10, -9 );   -- no shortcuts
 	Game.AddStageWaypoint( "m6_video_path8" );
 	Game.AddStageWaypoint( "m6_video_path14" );

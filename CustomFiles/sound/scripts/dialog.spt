@@ -6759,6 +6759,11 @@ create daSoundResourceData named C_profanity_3_convinit_Apu_L5M6
     AddFilename ( "conversations/C_profanity_3_convinit_Apu_L5M6.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_sucks_1_convinit_Hom_L1M6
+{
+    AddFilename ( "conversations/C_sucks_1_convinit_Hom_L1M6.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_project_1_convinit_Mrg_L1M1
 {
     AddFilename ( "conversations/C_project_1_convinit_Mrg_L1M1.rsd" 1.000000 )
