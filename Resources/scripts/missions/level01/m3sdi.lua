@@ -8,13 +8,28 @@ Game.SetMissionResetPlayerOutCar("m3_skinnerstart", "level1_carstart");
 Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 
 Game.AddStage();
-	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(166);
 	Game.SetStageCharacterModel("skinner");
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "m3_skinnerstart", "", "", "");
 		Game.AddStageVehicle("skinn_v","m3_skinnecarrstart","NULL","", "");
-		Game.SetDurationTime(3);
+		Game.SetDurationTime(1);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.RESET_TO_HERE();
+	Game.SetStageMessageIndex(270);
+	Game.SetStageCharacterModel("skinner");
+	Game.AddObjective("goto");
+		Game.SetDestination("m3_starter","dice");
+		Game.MustActionTrigger();
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.SetStageCharacterModel("skinner");
+	Game.AddObjective("timer");
+		Game.SetDurationTime(1);
 	Game.CloseObjective();
 Game.CloseStage();
 

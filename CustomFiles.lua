@@ -2,9 +2,15 @@ Paths = {}
 Paths.ModPath = GetModPath()
 Paths.ModPath = GetModPath()
 Paths.Resources = Paths.ModPath .. "/Resources"
+Paths.Modules = Paths.Resources .."/modules"
 Paths.Lib = Paths.Resources .. "/lib"
 
+Settings = {}
+Settings.DiceMode = GetSetting("DiceMode")
+
 dofile(Paths.Lib .. "/Game.lua")
+
+dofile(Paths.Modules.."/settings.lua")
 
 function GetGamePath(Path)
 	Path = FixSlashes(Path, false, true)

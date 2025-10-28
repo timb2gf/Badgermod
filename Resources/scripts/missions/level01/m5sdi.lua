@@ -6,12 +6,28 @@ Game.SetDynaLoadData("l1r7.p3d;l1z7.p3d;l1z1.p3d;");
 Game.UsePedGroup(1); 
 
 Game.AddStage();
-	Game.RESET_TO_HERE();
 	Game.SetStageCharacterModel("barney", "barney");
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "m5_barney", "", "", "");
 		Game.AddStageVehicle("plowk_v","m5_barneycar","NULL","", "");
-		Game.SetDurationTime(3);
+		Game.SetDurationTime(1);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.RESET_TO_HERE();
+	Game.SetStageMessageIndex(270);
+	Game.SetStageCharacterModel("barney", "barney");
+	Game.AddObjective("goto");
+		Game.SetDestination("m5_starter","dice");
+		Game.MustActionTrigger();
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.SetStageCharacterModel("barney", "barney");
+	Game.AddObjective("timer");
+		Game.SetDurationTime(1);
 	Game.CloseObjective();
 Game.CloseStage();
 
