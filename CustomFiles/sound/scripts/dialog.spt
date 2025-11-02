@@ -4309,6 +4309,11 @@ create daSoundResourceData named C_churro2_1_convinit_Len_L1M3
     AddFilename ( "conversations/C_churro2_1_convinit_Len_L1M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_churro_1_convinit_Len_L1M6
+{
+    AddFilename ( "conversations/C_churro_1_convinit_Len_L1M6.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_churro2_2_convinit_Hom_L1M3
 {
     AddFilename ( "conversations/C_churro2_2_convinit_Hom_L1M3.rsd" 1.000000 )

@@ -1,4 +1,4 @@
-Game.LoadDisposableCar("art\\cars\\marge_v.p3d","marge_v","AI");
+Game.LoadDisposableCar("art\\cars\\tacos.p3d","tacos","AI");
 Game.LoadP3DFile("art\\missions\\level01\\mission6cam.p3d");
 
 Game.LoadP3DFile( "art\\frontend\\dynaload\\images\\msnicons\\location\\grocery.p3d" );

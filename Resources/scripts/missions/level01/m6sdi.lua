@@ -22,6 +22,7 @@ Game.AddStage();
 		Game.SetDestination("m4_locator_sd", "triggersphere");
 		Game.SetCollectibleEffect("wrench_collect");
 		Game.MustActionTrigger();
+		Game.SetFadeOut(1.0);
 	Game.CloseObjective();
 Game.CloseStage();
 
@@ -48,6 +49,44 @@ Game.AddStage(0);
 	Game.AddObjective("getin", "neither");
 	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_06.p3d" );
 		Game.SetObjTargetVehicle("current");
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.SetStageMessageIndex(254);
+	Game.SetHUDIcon( "wstation" );
+	Game.AddObjective("goto");
+		Game.TurnGotoDialogOff();
+		Game.SetDestination("m6_pp", "carsphere");
+		Game.SetCollectibleEffect("wrench_collect");
+		Game.SetFadeOut(1.0);
+		Game.SetSwapDefaultCarLocator("m4_carstart");
+		Game.SetSwapPlayerLocator("m6_lenny");
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.AddObjective("timer");
+		Game.SetStageCharacterModel("lenny");
+		Game.AddStageCharacter ("homer", "m6_lenny", "", "current", "m4_homer_start");
+		Game.AddNPC ("carl", "m6_carl");
+		Game.AddStageVehicle("tacos","m6_lennycar","NULL","", "");
+		Game.SetDurationTime(3);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetStageCharacterModel("mibach");
+	Game.AddObjective("dialogue");
+		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
+		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.AddAmbientNpcAnimation( "dialogue_scratch_head" );
+		Game.SetConversationCam( 0, "pc_far" );
+		Game.AddAmbientPcAnimation( "dialogue_scratch_head" );
+		Game.SetCamBestSide("m5_bestcam");
+		Game.SetDialogueInfo("lenny","carl","churro",0);
+		Game.SetDialoguePositions("m6_carl","m6_lenny","m6_lennycar");
+		Game.SetSwapPlayerLocator("m6_lenny");
 	Game.CloseObjective();
 Game.CloseStage();
 
