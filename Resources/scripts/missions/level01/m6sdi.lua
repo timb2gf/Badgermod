@@ -85,7 +85,7 @@ Game.AddStage(0);
 		Game.AddAmbientPcAnimation( "dialogue_scratch_head" );
 		Game.SetCamBestSide("m5_bestcam");
 		Game.SetDialogueInfo("lenny","carl","churro",0);
-		Game.SetDialoguePositions("m6_carl","m6_lenny","m6_lennycar");
+		Game.SetDialoguePositions("m6_lenny","m6_carl","m6_lennycar");
 		Game.SetSwapPlayerLocator("m6_lenny");
 	Game.CloseObjective();
 Game.CloseStage();
