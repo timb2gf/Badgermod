@@ -7,7 +7,7 @@ Game.UsePedGroup(3);
 
 Game.AddStage();
 	Game.AddObjective("timer");
-		Game.AddStageCharacter ("homer", "m4_plocator", "", "current", "m4_carstart");
+		Game.AddStageCharacter ("homer", "m4_homer_start", "", "current", "m4_carstart");
 		Game.AddNPC("burns", "m4_carl_sd");
 		Game.SetDurationTime(3);
 	Game.CloseObjective();
@@ -57,7 +57,7 @@ Game.AddStage();
 	Game.SetHUDIcon( "wstation" );
 	Game.AddObjective("goto");
 		Game.TurnGotoDialogOff();
-		Game.SetDestination("m6_pp", "carsphere");
+		Game.SetDestination("m6_pp", "nosphere");
 		Game.SetCollectibleEffect("wrench_collect");
 		Game.SetFadeOut(1.0);
 		Game.SetSwapDefaultCarLocator("m4_carstart");

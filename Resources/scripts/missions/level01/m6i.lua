@@ -10,15 +10,36 @@ Game.UsePedGroup(3);
 
 Game.SetForcedCar();
 
-Game.AddStage("final"); -- destroy the video games!
+Game.AddStage();
 	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(16);
-	Game.SetHUDIcon( "bonestor" );
+	Game.SetStageMessageIndex(271);
+	Game.SetHUDIcon( "homer" );
+	Game.SetStageCharacterModel("lenny");
 	Game.AddStageVehicle("famil_v","m6_homerstart","target","Missions\\level01\\M4evade.con", "homer");
 	Game.SetVehicleAIParams( "famil_v", -10, -9 );   -- no shortcuts
 	Game.AddStageWaypoint( "m6_homerend" );
 	Game.AddObjective("follow","neither");
 		Game.SetObjTargetVehicle("famil_v");
+		Game.RemoveNPC ("carl");
+		Game.SwapInDefaultCar();
+		Game.SetSwapDefaultCarLocator("level1_carstart");
+		Game.SetSwapForcedCarLocator("level1_carstart");
+		Game.SetSwapPlayerLocator("level1_homer_start");
+		Game.CloseObjective();
+		Game.SetFadeOut(1.0);
+	Game.AddCondition("followdistance");
+		Game.SetFollowDistances(0,120);
+		Game.SetCondTargetVehicle("famil_v");
+	Game.CloseCondition();
+Game.CloseStage();
+
+Game.AddStage("final");
+	Game.SetStageCharacterModel("lenny");
+	Game.AddObjective("timer");
+		Game.AddStageCharacter ("homer", "level1_homer_walkto", "", "", "");
+		Game.AddNPC("homer", "m1_marge_sd");
+		Game.AddNPC("carl", "m1_marge_sd");
+		Game.SetDurationTime(3);
 	Game.CloseObjective();
 Game.CloseStage();
 
