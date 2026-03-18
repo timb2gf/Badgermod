@@ -1,0 +1,31 @@
+<CustomCollectorCardSupport>
+
+	<CustomCharacters>
+			<CustomCharacter Name="Nick" Index="31" />
+		</CustomCharacters>
+		
+    <Level Number="1">
+		<!-- Custom Drawable/CollectDrawable, No Quotes -->
+        <CollectorCard Number="1">
+            <Quotes />  <!-- Removes Base Game Quotes -->
+         </CollectorCard>
+		 
+        <CollectorCard Number="3">
+            <Quotes>
+				<Quote Name="Nick" />
+			</Quotes>
+         </CollectorCard>
+		
+		<CollectorCard Number="2">
+            <Quotes>
+				<Quote Name="KRUSTY" />
+			</Quotes>
+         </CollectorCard>
+		 
+		 <CollectorCard Number="5">
+            <Quotes>
+				<Quote Name="SKINNER" />
+			</Quotes>
+         </CollectorCard>
+    </Level>
+</CustomCollectorCardSupport>
