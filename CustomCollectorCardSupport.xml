@@ -2,13 +2,15 @@
 
 	<CustomCharacters>
 			<CustomCharacter Name="Nick" Index="31" />
-			.<CustomCharacter Name="Ned" Index="32" />
+			<CustomCharacter Name="Ned" Index="32" />
+			<CustomCharacter Name="Muse" Index="33" />
 		</CustomCharacters>
 		
     <Level Number="1">
-		<!-- Custom Drawable/CollectDrawable, No Quotes -->
         <CollectorCard Number="1">
-            <Quotes />  <!-- Removes Base Game Quotes -->
+			<Quotes>
+				<Quote Name="Muse" />
+			</Quotes>
          </CollectorCard>
 		 
         <CollectorCard Number="3">
