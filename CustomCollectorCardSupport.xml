@@ -2,6 +2,7 @@
 
 	<CustomCharacters>
 			<CustomCharacter Name="Nick" Index="31" />
+			.<CustomCharacter Name="Ned" Index="32" />
 		</CustomCharacters>
 		
     <Level Number="1">
@@ -22,10 +23,31 @@
 			</Quotes>
          </CollectorCard>
 		 
+		<CollectorCard Number="4">
+            <Quotes>
+				<Quote Name="Ned" />
+			</Quotes>
+         </CollectorCard>
+		 
 		 <CollectorCard Number="5">
             <Quotes>
 				<Quote Name="SKINNER" />
 			</Quotes>
          </CollectorCard>
+		 
+		 <CollectorCard Number="6">
+            <Quotes>
+				<Quote Name="HOMER" />
+			</Quotes>
+         </CollectorCard>
     </Level>
+	
+	<Level Number="7">
+	
+        <CollectorCard Number="3">
+            <Quotes>
+				<Quote Name="Nick" />
+			</Quotes>
+         </CollectorCard>
+	</Level>	 
 </CustomCollectorCardSupport>
