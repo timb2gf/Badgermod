@@ -4,6 +4,7 @@
 			<CustomCharacter Name="Nick" Index="31" />
 			<CustomCharacter Name="Ned" Index="32" />
 			<CustomCharacter Name="Muse" Index="33" />
+			<CustomCharacter Name="Chalmers" Index="34" />
 		</CustomCharacters>
 		
     <Level Number="1">
@@ -33,12 +34,14 @@
 		 
 		 <CollectorCard Number="5">
             <Quotes>
+				<Quote Name="Chalmers" />
 				<Quote Name="SKINNER" />
 			</Quotes>
          </CollectorCard>
 		 
 		 <CollectorCard Number="6">
             <Quotes>
+				<Quote Name="APU" />
 				<Quote Name="HOMER" />
 			</Quotes>
          </CollectorCard>
