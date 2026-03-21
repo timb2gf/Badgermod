@@ -5,49 +5,58 @@
 			<CustomCharacter Name="Ned" Index="32" />
 			<CustomCharacter Name="Muse" Index="33" />
 			<CustomCharacter Name="Chalmers" Index="34" />
+			<CustomCharacter Name="Barney" Index="35" />
 		</CustomCharacters>
 		
     <Level Number="1">
-        <CollectorCard Number="1">
-			<Quotes>
-				<Quote Name="Muse" />
-			</Quotes>
-         </CollectorCard>
-		 
-        <CollectorCard Number="3">
+		<CollectorCard Number="1">
             <Quotes>
-				<Quote Name="Nick" />
+				<Quote Name="APU" />
+				<Quote Name="HOMER" />
 			</Quotes>
          </CollectorCard>
-		
+	
 		<CollectorCard Number="2">
-            <Quotes>
-				<Quote Name="KRUSTY" />
-			</Quotes>
-         </CollectorCard>
-		 
-		<CollectorCard Number="4">
             <Quotes>
 				<Quote Name="Ned" />
 			</Quotes>
          </CollectorCard>
 		 
-		 <CollectorCard Number="5">
+		<CollectorCard Number="3">
+            <Quotes>
+				<Quote Name="BURNS" />
+			</Quotes>
+         </CollectorCard>
+		 
+		 <CollectorCard Number="4">
             <Quotes>
 				<Quote Name="Chalmers" />
 				<Quote Name="SKINNER" />
 			</Quotes>
          </CollectorCard>
 		 
-		 <CollectorCard Number="6">
+		 <CollectorCard Number="5">
             <Quotes>
-				<Quote Name="APU" />
 				<Quote Name="HOMER" />
+				<Quote Name="Barney" />
 			</Quotes>
          </CollectorCard>
+		 
     </Level>
 	
 	<Level Number="7">
+        <CollectorCard Number="1">
+			<Quotes>
+				<Quote Name="Muse" />
+			</Quotes>
+         </CollectorCard>
+		 		 
+		<CollectorCard Number="2">
+            <Quotes>
+				<Quote Name="KRUSTY" />
+			</Quotes>
+         </CollectorCard>
+		 
 	
         <CollectorCard Number="3">
             <Quotes>
