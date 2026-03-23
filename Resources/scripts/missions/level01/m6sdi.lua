@@ -53,8 +53,8 @@ Game.AddStage(0);
 Game.CloseStage();
 
 Game.AddStage();
-	Game.SetStageMessageIndex(254);
-	Game.SetHUDIcon( "wstation" );
+	Game.SetStageMessageIndex(217);
+	Game.SetHUDIcon( "simpsons" );
 	Game.AddObjective("goto");
 		Game.TurnGotoDialogOff();
 		Game.SetDestination("m6_pp", "nosphere");
