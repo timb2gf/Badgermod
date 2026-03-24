@@ -34,10 +34,9 @@ Game.AddStage();
 Game.CloseStage();
 
 Game.AddStage("final");
-	Game.SetStageCharacterModel("lenny");
 	Game.AddObjective("timer");
-		Game.AddStageCharacter ("homer", "level1_homer_walkto", "", "", "");
-		Game.AddNPC("homer", "m6_homer_sd");
+		Game.AddStageCharacter ("homer", "m6_homer_sd", "", "", "");
+		Game.AddNPC("lenny", "level1_homer_walkto");
 		Game.AddNPC("carl", "m6_carl_end");
 		Game.SetDurationTime(3);
 	Game.CloseObjective();
