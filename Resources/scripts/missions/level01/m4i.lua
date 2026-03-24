@@ -11,7 +11,7 @@ Game.AddStage(10);
 	Game.SetStageMessageIndex(266);
 	Game.SetHUDIcon( "burns" );
 	Game.SetStageCharacterModel("willie");
-	Game.AddStageVehicle("smith_v","m4_burnscar","NULL","Missions\\level01\\M4evade.con", "smithers");
+	Game.AddStageVehicle("smith_v","m4_burnscar","NULL","Missions\\level01\\M4follow.con", "smithers");
 	Game.AddObjective("delivery","neither");
 		Game.AddCollectible("m4_evi1","bloodbag");
 		Game.AddCollectible("m4_evi3","radio");

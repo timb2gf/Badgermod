@@ -8,6 +8,7 @@
 			<CustomCharacter Name="Barney" Index="35" />
 			<CustomCharacter Name="Moe" Index="36" />
 			<CustomCharacter Name="Rama" Index="37" />
+			<CustomCharacter Name="Mole" Index="38" />
 		</CustomCharacters>
 		
     <Level Number="1">
@@ -48,6 +49,14 @@
             <Quotes>
 				<Quote Name="CARL" />
 				<Quote Name="LENNY" />
+			</Quotes>
+         </CollectorCard>
+		 
+		 <CollectorCard Number="7">
+            <Quotes>
+				<Quote Name="Rama" />
+				<Quote Name="Mole" />
+				<Quote Name="Moe" />
 			</Quotes>
          </CollectorCard>
 		 
