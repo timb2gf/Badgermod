@@ -32,7 +32,7 @@ Game.AddStage();
 	Game.AddStageWaypoint( "m2_elec_path12" );
 	Game.AddObjective("dump","neither");
 		Game.SetObjTargetVehicle("elect_v");
-		Game.AddCollectible("m2_bk1","book");
+		Game.AddCollectible("m2_bk1","cat");
 		Game.AddCollectible("m2_bk2","book");
 		Game.AddCollectible("m2_bk3","book");
 		Game.AddCollectible("m2_bk4","book");

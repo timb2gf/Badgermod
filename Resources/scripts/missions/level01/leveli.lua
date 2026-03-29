@@ -41,7 +41,7 @@ Game.SetNumChaseCars("1");
 
 -- STREET RACE 2 CHARACTER
 
-	Game.AddNPCCharacterBonusMission("nelson", "npd", "sr2_nelson_sd", "sr2", "checkered", "intro", 0, "checkeredfinish" );
+	Game.AddNPCCharacterBonusMission("catlady", "npd", "sr2_nelson_sd", "sr2", "checkered", "intro", 0, "checkeredfinish" );
 	Game.SetBonusMissionDialoguePos("sr2","sr2_player","sr2_nelson_sd","level1_carstart");
 
 	Game.SetConversationCam( 0, "pc_far",                        	"sr2" );	

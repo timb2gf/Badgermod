@@ -6,6 +6,7 @@ Game.LoadP3DFile("art\\missions\\level01\\lwnchair.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\mower.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\tux.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\book.p3d");
+Game.LoadP3DFile("art\\missions\\level01\\cat.p3d");
 Game.LoadP3DFile("art\\missions\\level01\\boxexpld.p3d");
 
 Game.LoadP3DFile("art\\chars\\lovejo_m.p3d");

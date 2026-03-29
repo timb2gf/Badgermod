@@ -80,9 +80,9 @@ Game.AddStage(0);
 	Game.AddObjective("dialogue");
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
-		Game.AddAmbientNpcAnimation( "dialogue_scratch_head" );
+		Game.AddAmbientNpcAnimation( " " );
 		Game.SetConversationCam( 0, "pc_far" );
-		Game.AddAmbientPcAnimation( "dialogue_scratch_head" );
+		Game.AddAmbientPcAnimation( "dialogue_yes" );
 		Game.SetCamBestSide("m5_bestcam");
 		Game.SetDialogueInfo("lenny","carl","churro",0);
 		Game.SetDialoguePositions("m6_lenny","m6_carl","m6_lennycar");
