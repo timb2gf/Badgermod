@@ -44,8 +44,8 @@ Game.SetNumChaseCars("1");
 	Game.AddNPCCharacterBonusMission("catlady", "npd", "sr2_nelson_sd", "sr2", "checkered", "intro", 0, "checkeredfinish" );
 	Game.SetBonusMissionDialoguePos("sr2","sr2_player","sr2_nelson_sd","level1_carstart");
 
-	Game.SetConversationCam( 0, "pc_far",                        	"sr2" );	
-	Game.SetConversationCam( 1, "npc_far",                        	"sr2" );
+	Game.SetConversationCam( 0, "npc_far",                        	"sr2" );	
+	Game.SetConversationCam( 1, "pc_far",                        	"sr2" );
 	Game.ClearAmbientAnimations(                                     "sr2" );
 	Game.AddAmbientNpcAnimation( "none", 			                "sr2" );
 	Game.AddAmbientNpcAnimation( "dialogue_hands_in_air",		    "sr2" );

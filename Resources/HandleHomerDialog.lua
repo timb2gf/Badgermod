@@ -21,7 +21,7 @@ if Level == 1 then
                 print("Redirecting \"" .. Path .. "\" to \"" .. NewPath .. "\".")
                 Redirect(NewPath)
             else
-                print("Not redirecting \"" .. Path .. "\": No dialog found.")
+                -- print("Not redirecting \"" .. Path .. "\": No dialog found.") this will cause vomit in the console use only for debugging
             end
         else
             print("Not redirecting \"" .. Path .. "\": No dialog found.")
