@@ -41,8 +41,8 @@ Game.SetNumChaseCars("1");
 
 -- STREET RACE 2 CHARACTER
 
-	Game.AddNPCCharacterBonusMission("catlady", "npd", "sr2_nelson_sd", "sr2", "checkered", "intro", 0, "checkeredfinish" );
-	Game.SetBonusMissionDialoguePos("sr2","sr2_player","sr2_nelson_sd","level1_carstart");
+	Game.AddNPCCharacterBonusMission("nelson", "npd", "m3_bestside", "sr2", "checkered", "intro", 0, "checkeredfinish" );
+	Game.SetBonusMissionDialoguePos("sr2","sr2_player","m3_bestside","level1_carstart");
 
 	Game.SetConversationCam( 0, "npc_far",                        	"sr2" );	
 	Game.SetConversationCam( 1, "pc_far",                        	"sr2" );
@@ -76,8 +76,8 @@ Game.SetNumChaseCars("1");
 
 --BONUS MISSION CHARACTER
 
-	Game.AddNPCCharacterBonusMission("cletus", "npd", "bm1_cletus_sd", "bm1", "exclamation", "jug", 1, "exclamation_shadow" );
-	Game.SetBonusMissionDialoguePos("bm1","bm1_player","bm1_cletus_sd","level1_carstart");
+	Game.AddNPCCharacterBonusMission("catlady", "npd", "bm1_catlady_sd", "bm1", "exclamation", "nonsense", 1, "exclamation_shadow" );
+	Game.SetBonusMissionDialoguePos("bm1","bm1_player","bm1_catlady_sd","level1_carstart");
 
 	Game.SetConversationCam( 0, "pc_near",                        	"bm1" );	
 	Game.SetConversationCam( 1, "npc_far",                        	"bm1" );

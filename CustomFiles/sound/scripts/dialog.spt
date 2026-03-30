@@ -6059,34 +6059,9 @@ create daSoundResourceData named C_jerkwater_2_noboxconv_Apu_L3M3
     AddFilename ( "conversations/C_jerkwater_2_noboxconv_Apu_L3M3.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_jug_1_convinit_Hom_L1
+create daSoundResourceData named C_nonsense_1_convinit_Ccl_L1
 {
-    AddFilename ( "conversations/C_jug_1_convinit_Hom_L1.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named C_jug_2_convinit_Clt_L1
-{
-    AddFilename ( "conversations/C_jug_2_convinit_Clt_L1.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named C_jug_3_convinit_Hom_L1
-{
-    AddFilename ( "conversations/C_jug_3_convinit_Hom_L1.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named C_jug_4_convinit_Clt_L1
-{
-    AddFilename ( "conversations/C_jug_4_convinit_Clt_L1.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named C_jug_5_convinit_Hom_L1
-{
-    AddFilename ( "conversations/C_jug_5_convinit_Hom_L1.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named C_jug_6_convinit_Clt_L1
-{
-    AddFilename ( "conversations/C_jug_6_convinit_Clt_L1.rsd" 1.000000 )
+    AddFilename ( "conversations/C_nonsense_1_convinit_Ccl_L1.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_kaiser2_1_convinit_Lis_L3M4

@@ -658,6 +658,11 @@
 	<RSDFile FileName="Hit_Run_Main" Size="6255760" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Hit_Run_End_Neg" Size="462844" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<RSDFile FileName="Land_of_Choc_Main" Size="14110400" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Nick_Main" Size="15938688" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Nick_Intro" Size="1154176" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Nick_End_Pos" Size="296440" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Nick_End_Neg" Size="529404" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
+	<RSDFile FileName="Nick_End_Sus" Size="368636" AudioFormatEncoding="PCM" AudioFormatChannels="2" AudioFormatBitResolution="16" AudioFormatSamplingRate="24000" />
 	<Stream Name="Simpsons_Theme" RSDFile="Simpsons_Theme" Streamed="true" TempoTrack="172 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="FE_trans01" RSDFile="FE_trans01" Streamed="true" TempoTrack="75 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="FE_trans02" RSDFile="FE_trans02" Streamed="true" TempoTrack="75 4/4" TempoTrackStartBeat="1" />
@@ -784,6 +789,11 @@
 	<Stream Name="Collection01d_End_Pos" RSDFile="Collection01d_End_Pos" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Collection01d_End_Neg" RSDFile="Collection01d_End_Neg" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Collection01d_End_Sus" RSDFile="Collection01d_End_Sus_b2" Streamed="true" TempoTrack="160 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="Nick_Main" RSDFile="Nick_Main" Streamed="true" TempoTrack="120 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="Nick_Intro" RSDFile="Nick_Intro" Streamed="true" TempoTrack="120 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="Nick_End_Pos" RSDFile="Nick_End_Pos" Streamed="true" TempoTrack="120 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="Nick_End_Neg" RSDFile="Nick_End_Neg" Streamed="true" TempoTrack="120 4/4" TempoTrackStartBeat="1" />
+	<Stream Name="Nick_End_Sus" RSDFile="Nick_End_Sus" Streamed="true" TempoTrack="120 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Orch_Chase01_Pickup" RSDFile="Orch_Chase01_Pickup" Streamed="true" TempoTrack="170 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Orch_Chase01_Main" RSDFile="Orch_Chase01_Main" Streamed="true" TempoTrack="170 4/4" TempoTrackStartBeat="1" />
 	<Stream Name="Orch_Chase01_Drama_Pickup" RSDFile="Orch_Chase01_Drama_Pickup_b3" Streamed="true" TempoTrack="170 4/4" TempoTrackStartBeat="1" />
@@ -1302,9 +1312,9 @@
 	<Region Name="Bonus_main_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent>
-				<StreamEvent Name="Collection02_Pickup" />
+				<StreamEvent Name="Nick_Intro" />
 				<LogicRepeatEvent>
-					<StreamEvent Name="Collection02_Main" />
+					<StreamEvent Name="Nick_Main" />
 				</LogicRepeatEvent>
 			</LogicRepeatEvent>
 		</Layer>
@@ -1312,23 +1322,25 @@
 	<Region Name="Bonus_end_Pos_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="Collection02_End_Pos" />
+				<StreamEvent Name="Nick_End_Pos" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
 	<Region Name="Bonus_end_Neg_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="Collection02_End_Neg" />
+				<StreamEvent Name="Nick_End_Neg" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
 	<Region Name="Bonus_end_Sus_region" ExitRegion="OF_explore_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
-			<LogicOrEvent>
-				<StreamEvent Name="Collection02_End_Sus1" />
-				<StreamEvent Name="Collection02_End_Sus2" />
-			</LogicOrEvent>
+			<LogicRepeatEvent>
+				<StreamEvent Name="Nick_Intro" />
+				<LogicOrEvent>
+					<StreamEvent Name="Nick_Main" />
+				</LogicOrEvent>
+			</LogicRepeatEvent>
 		</Layer>
 	</Region>
 	<Region Name="street_race1_start_region" Volume="1">
