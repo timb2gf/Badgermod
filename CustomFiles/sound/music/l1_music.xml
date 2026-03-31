@@ -437,7 +437,7 @@
 		<PlayRegionAction Region="M7_end_Sus_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="Bonus_start">
-		<PlayRegionAction Region="Bonus_main_region" RegionResumeType="Resume" />
+		<PlayRegionAction Region="Bonus_start_region" RegionResumeType="Resume" />
 	</Event>
 	<Event Name="Bonus_win">
 		<PlayRegionAction Region="Bonus_end_Pos_region" RegionResumeType="Restart" />
@@ -446,7 +446,7 @@
 		<PlayRegionAction Region="Bonus_end_Neg_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="Bonus_get_out_of_car">
-		<PlayRegionAction Region="Bonus_end_Sus_region" RegionResumeType="Restart" />
+		<PlayRegionAction Region="Bonus_start_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="StreetRace01_start">
 		<PlayRegionAction Region="street_race1_start_region" RegionResumeType="Resume" />
@@ -1309,13 +1309,13 @@
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-	<Region Name="Bonus_main_region" Volume="1">
+	<Region Name="Bonus_start_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent>
 				<StreamEvent Name="Nick_Intro" />
-				<LogicRepeatEvent>
+				<LogicOrEvent>
 					<StreamEvent Name="Nick_Main" />
-				</LogicRepeatEvent>
+				</LogicOrEvent>
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
