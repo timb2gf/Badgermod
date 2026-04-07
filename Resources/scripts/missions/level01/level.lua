@@ -27,6 +27,7 @@ Game.AddTeleportDest("Graveyard", 368, 5.1, 5.4, "l1z1.p3d;l1r1.p3d;l1r7.p3d;");
 
 Game.LoadP3DFile("art\\phonecamera.p3d");
 Game.LoadP3DFile("art\\cards.p3d");
+Game.LoadP3DFile("art\\l1_cards.p3d");
 Game.LoadP3DFile("art\\wrench.p3d");
 Game.LoadP3DFile("art\\missions\\generic\\missgen.p3d");
 Game.LoadP3DFile("art\\chars\\homer_kickwave.p3d");
