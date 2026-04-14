@@ -5804,9 +5804,14 @@ create daSoundResourceData named C_intro_1_convinit_Hom_L1R1
     AddFilename ( "conversations/C_intro_1_convinit_Hom_L1R1.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_intro_1_convinit_Ccl_L1R2
+create daSoundResourceData named C_intro_1_convinit_Hom_L1R2
 {
-    AddFilename ( "conversations/C_intro_1_convinit_Ccl_L1R2.rsd" 1.000000 )
+    AddFilename ( "conversations/C_intro_1_convinit_Hom_L1R2.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_intro_2_convinit_Nel_L1R2
+{
+    AddFilename ( "conversations/C_intro_2_convinit_Nel_L1R2.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named C_intro_1_convinit_Hom_L1R3
