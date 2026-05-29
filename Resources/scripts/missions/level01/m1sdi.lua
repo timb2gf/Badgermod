@@ -5,6 +5,11 @@ Game.SetDynaLoadData("l1r2.p3d;l1r1.p3d;l1z2.p3d;");
 
 Game.UsePedGroup( 0 ); 
 
+Game.SetMissionStartCameraName( "mission7camShape" );
+Game.SetMissionStartMulticontName( "mission7cam" );
+Game.SetAnimatedCameraName( "mission7camShape" );
+Game.SetAnimCamMulticontName( "mission7cam" );
+
 Game.AddStage(0);
 	Game.SetStageMessageIndex(154);
 	Game.AddObjective("gooutside");

@@ -5,6 +5,11 @@ Game.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
 
 Game.UsePedGroup( 0 ); 
 
+--Game.SetMissionStartCameraName( "mission4camShape" );
+--Game.SetMissionStartMulticontName( "mission4cam" );
+--Game.SetAnimatedCameraName( "mission4camShape" );
+--Game.SetAnimCamMulticontName( "mission4cam" );
+
 Game.AddStage(9);
 	Game.SetMaxTraffic(2);
 	Game.SetStageMessageIndex(08);
