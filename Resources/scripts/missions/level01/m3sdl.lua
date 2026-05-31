@@ -1,4 +1,4 @@
-Game.LoadP3DFile("art\\missions\\level01\\mission1cam.p3d");
+Game.LoadP3DFile("art\\missions\\level01\\mission3cam.p3d");
 
 Game.LoadDisposableCar("art\\cars\\skinn_v.p3d","skinn_v","AI");
 

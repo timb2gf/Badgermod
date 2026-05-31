@@ -1,8 +1,11 @@
 Game.SelectMission("m3sd");
 
-Game.UsePedGroup( 0 ); 
+Game.SetMissionStartCameraName( "mission3camShape" );
+Game.SetMissionStartMulticontName( "mission3cam" );
+Game.SetAnimatedCameraName( "mission3camShape" );
+Game.SetAnimCamMulticontName( "mission3cam" );
 
---Game.SetInitialWalk("level1_homer_start");
+Game.UsePedGroup( 0 ); 
 
 Game.SetMissionResetPlayerOutCar("m3_skinnerstart", "level1_carstart");
 Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
