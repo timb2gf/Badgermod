@@ -1,4 +1,4 @@
-Game.LoadP3DFile("art\\missions\\level04\\mission7cam.p3d");
+Game.LoadP3DFile("art\\missions\\level01\\mission1cam.p3d");
 
 Game.LoadP3DFile("art\\cars\\icecream.p3d");
 

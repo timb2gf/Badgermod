@@ -1,14 +1,14 @@
 Game.SelectMission("m2sd");
 
-Game.SetMissionResetPlayerOutCar("m4_homer_start", "m4_carstart");
-Game.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
-
-Game.UsePedGroup( 0 ); 
-
 --Game.SetMissionStartCameraName( "mission4camShape" );
 --Game.SetMissionStartMulticontName( "mission4cam" );
 --Game.SetAnimatedCameraName( "mission4camShape" );
 --Game.SetAnimCamMulticontName( "mission4cam" );
+
+Game.SetMissionResetPlayerOutCar("m4_homer_start", "m4_carstart");
+Game.SetDynaLoadData("l1r4a.p3d;l1z6.p3d;l1r6.p3d;");
+
+Game.UsePedGroup( 0 ); 
 
 Game.AddStage(9);
 	Game.SetMaxTraffic(2);
