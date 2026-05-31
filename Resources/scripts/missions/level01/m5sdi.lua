@@ -3,6 +3,11 @@ Game.SelectMission("m5sd");
 Game.SetMissionResetPlayerOutCar("m5_barney", "m4_carstart");
 Game.SetDynaLoadData("l1r7.p3d;l1z7.p3d;l1z1.p3d;");
 
+Game.SetMissionStartCameraName( "mission5camShape" );
+Game.SetMissionStartMulticontName( "mission5cam" );
+Game.SetAnimatedCameraName( "mission5camShape" );
+Game.SetAnimCamMulticontName( "mission5cam" );
+
 Game.UsePedGroup(1); 
 
 Game.AddStage();

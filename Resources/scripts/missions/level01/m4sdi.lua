@@ -1,5 +1,10 @@
 Game.SelectMission("m4sd");
 
+Game.SetMissionStartCameraName( "mission4camShape" ); --41cam cuz sick game
+Game.SetMissionStartMulticontName( "mission4cam" );
+Game.SetAnimatedCameraName( "mission4camShape" );
+Game.SetAnimCamMulticontName( "mission4cam" );
+
 Game.SetMissionResetPlayerOutCar("ambient_willie", "m4_carstart");
 Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 
