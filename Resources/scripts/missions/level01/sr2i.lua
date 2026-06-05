@@ -46,7 +46,6 @@ Game.AddStageWaypoint( "sr2_waypoint1" );
 Game.AddStageWaypoint( "sr2_waypoint2" );
 Game.AddStageWaypoint( "sr2_waypoint3" );
 Game.AddStageWaypoint( "sr2_waypoint4" );
-Game.AddStageWaypoint( "sr2_waypoint4b" );
 Game.AddStageWaypoint( "sr2_waypoint5" );
 Game.AddStageWaypoint( "sr2_waypoint6" );
 Game.AddStageWaypoint( "sr2_waypoint7" );
