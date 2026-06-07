@@ -1,4 +1,4 @@
-Game.SelectMission("m0sd");
+Game.SelectMission("m7sd");
 
 Game.SetMissionResetPlayerOutCar("level1_homer_start", "level1_carstart");
 Game.SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");

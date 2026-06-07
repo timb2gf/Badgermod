@@ -1,4 +1,4 @@
-Game.SelectMission("m0");
+Game.SelectMission("m7");
 
 Game.SetMissionResetPlayerInCar("level1_carstart");
 Game.SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
@@ -8,16 +8,9 @@ Game.UsePedGroup( 0 );
 Game.AddStage(0);
 	Game.SetStageMessageIndex(12);
 	Game.AddStageDynaLoadData("m7_trash.p3d");
-	AddObjective("delivery","neither");
-		AddCollectible("PP_powerbox1");
-		AddCollectible("PP_powerbox2");
-		AddCollectible("PP_powerbox3");
-		AddCollectible("PP_powerbox4");
-		AddCollectible("PP_powerbox5");
-		AddCollectible("PP_powerbox6");
-		AddCollectible("PP_powerbox7");
-		AddCollectible("PP_powerbox8");
-		AddCollectible("PP_powerbox9");
+	Game.AddObjective("delivery","neither");
+		Game.AddCollectible("L1_Trash1, litter");
+		Game.AddCollectible("L1_Trash2, litter");
 	Game.CloseObjective();
 Game.CloseStage();
 
