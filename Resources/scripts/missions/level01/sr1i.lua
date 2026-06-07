@@ -24,7 +24,7 @@ Game.StartCountdown("count");
 	Game.AddToCountdownSequence( "2", 900 ); -- duration time in milliseconds
 	Game.AddToCountdownSequence( "1", 1000 ); -- duration time in milliseconds
 	Game.AddToCountdownSequence( "GO", 400 ); -- duration time in milliseconds
-Game.SetStageTime(195); 
+Game.SetStageTime(170); 
 Game.SetStageMessageIndex(222);
 --SetStageTime(150);
 Game.RESET_TO_HERE();
