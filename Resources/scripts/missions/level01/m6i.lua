@@ -15,7 +15,7 @@ Game.AddStage();
 	Game.SetStageMessageIndex(271);
 	Game.SetHUDIcon( "homer" );
 	Game.SetStageCharacterModel("lenny");
-	Game.AddStageVehicle("famil_v","m6_homerstart","target","Missions\\level01\\m6follow.con", "homer");
+	Game.AddStageVehicle("famil_v","m6_homerstart","follow","Missions\\level01\\m6follow.con", "homer");
 	Game.SetVehicleAIParams( "famil_v", -10, -9 );   -- no shortcuts
 	Game.AddStageWaypoint( "m6_homerend" );
 	Game.AddObjective("follow","neither");

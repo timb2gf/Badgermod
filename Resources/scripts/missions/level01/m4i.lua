@@ -34,7 +34,7 @@ Game.AddStage();
 	Game.AddStageWaypoint( "m4_burnspath4" );
 	Game.AddObjective("dump", "neither");
 		Game.SetObjTargetVehicle("smith_v");
-		Game.ActivateVehicle("smith_v","NULL","evade");
+		Game.ActivateVehicle("smith_v","NULL","follow");
 		Game.SetVehicleAIParams( "smith_v", -10, -9 );
 		Game.AddCollectible("m4_burnev_1","molemanr");
 		Game.AddCollectible("m4_burnev_2","fish");

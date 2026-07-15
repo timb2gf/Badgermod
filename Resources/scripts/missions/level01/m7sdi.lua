@@ -18,9 +18,10 @@ Game.AddStage(0);
 	Game.SetHUDIcon("marage");	
 	Game.SetStageMessageIndex(00);
 	Game.AddObjective("talkto","neither");
-		Game.AddNPC("marge", "m1_marge_sd");
-		Game.AddObjectiveNPCWaypoint( "marge", "marge_walk_1" );
-		Game.SetTalkToTarget("marge", 0, 0.2);
+		Game.AddStageVehicle("pizza","m7_blackvan","NULL","Missions\\level01\\M4follow.con");
+		Game.AddNPC("lenny", "m1_marge_sd");
+		Game.SetTalkToTarget("lenny", 0, 0.2);
+		Game.AddNPC("carl", "m6_carl_end");
 	Game.CloseObjective();
 Game.CloseStage();
 
