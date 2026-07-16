@@ -12,6 +12,7 @@ Game.AddStage("final");
 	Game.AddStageWaypoint( "m7_pizza_race2" );
 	Game.AddStageWaypoint( "m7_pizza_race3" );
 	Game.AddStageWaypoint( "m7_pizza_race4" );
+	Game.AddStageWaypoint("m7_race8");
 	Game.AddObjective( "race","both");
 		Game.AddStageVehicle("pizza","m7_blackvan","race","Missions\\level01\\M4follow.con");
 		Game.SetStageAIRaceCatchupParams("pizza", 80, 0.5, 1.0, 1.5);

@@ -6,7 +6,7 @@ Game.SetAnimatedCameraName( "race1camShape" );
 Game.SetAnimCamMulticontName( "race1cam" );
 
 Game.SetMissionResetPlayerInCar("sr1_carstart");
-Game.SetDynaLoadData("l1z7.p3d;l1r7.p3d;l1r6.p3d;");
+Game.SetDynaLoadData("l1r2.p3d;l1r1.p3d;l1z2.p3d;");
 
 Game.UsePedGroup(5); 
 
@@ -24,7 +24,7 @@ Game.StartCountdown("count");
 	Game.AddToCountdownSequence( "2", 900 ); -- duration time in milliseconds
 	Game.AddToCountdownSequence( "1", 1000 ); -- duration time in milliseconds
 	Game.AddToCountdownSequence( "GO", 400 ); -- duration time in milliseconds
-Game.SetStageTime(170); 
+Game.SetStageTime(120); 
 Game.SetStageMessageIndex(222);
 --SetStageTime(150);
 Game.RESET_TO_HERE();
@@ -41,7 +41,7 @@ Game.AddCollectible("sr1_waypoint3","carsphere");
 Game.SetCollectibleEffect("wrench_collect");
 Game.AddCollectible("sr1_waypoint4","carsphere");
 Game.SetCollectibleEffect("wrench_collect");
-Game.SetRaceLaps(5);
+Game.SetRaceLaps(3);
 Game.CloseObjective();
 
 Game.AddCondition("timeout");
