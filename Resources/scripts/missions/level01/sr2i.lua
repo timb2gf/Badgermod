@@ -6,7 +6,7 @@ Game.SetAnimatedCameraName( "race2camShape" );
 Game.SetAnimCamMulticontName( "race2cam" );
 
 Game.SetMissionResetPlayerInCar("sr2_carstart");
-Game.SetDynaLoadData("l1z4.p3d;l1r3.p3d;l1z3.p3d;");
+Game.SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
 
 Game.InitLevelPlayerVehicle("fsnp_v","sr2_carstart","OTHER");
 

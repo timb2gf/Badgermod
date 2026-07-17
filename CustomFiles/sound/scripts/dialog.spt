@@ -4614,11 +4614,6 @@ create daSoundResourceData named C_count_1_noboxconv_Nel_L1R2
     AddFilename ( "conversations/C_count_1_noboxconv_Nel_L1R2.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named C_count_1_noboxconv_Ccl_L1R2
-{
-    AddFilename ( "conversations/C_count_1_noboxconv_Ccl_L1R2.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named C_count_1_noboxconv_Nel_L2R2
 {
     AddFilename ( "conversations/C_count_1_noboxconv_Nel_L2R2.rsd" 1.000000 )
