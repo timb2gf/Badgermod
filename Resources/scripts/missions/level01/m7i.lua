@@ -7,7 +7,7 @@ Game.UsePedGroup( 0 );
 
 Game.AddStage("final");
 	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(12);
+	Game.SetStageMessageIndex(275);
 	Game.AddStageWaypoint( "m7_pizza_race1" );
 	Game.AddStageWaypoint( "m7_pizza_race2" );
 	Game.AddStageWaypoint( "m7_pizza_race3" );

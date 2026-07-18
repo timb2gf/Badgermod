@@ -6634,6 +6634,21 @@ create daSoundResourceData named C_plowking_3_convinit_Hom_L1
     AddFilename ( "conversations/C_plowking_3_convinit_Hom_L1.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_schoolbus_1_convinit_Oto_L1
+{
+    AddFilename ( "conversations/C_schoolbus_1_convinit_Oto_L1.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_schoolbus_2_convinit_Hom_L1
+{
+    AddFilename ( "conversations/C_schoolbus_2_convinit_Hom_L1.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_schoolbus_3_convinit_Oto_L1
+{
+    AddFilename ( "conversations/C_schoolbus_3_convinit_Oto_L1.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_porkbag_1_convinit_Brt_L6B1
 {
     AddFilename ( "conversations/C_porkbag_1_convinit_Brt_L6B1.rsd" 1.000000 )
