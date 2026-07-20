@@ -13,14 +13,14 @@
 Game.BindReward( "famil_v", "art\\cars\\famil_v.p3d", "car", "defaultcar", 1 );
 Game.BindReward( "cletu_v", "art\\cars\\cletu_v.p3d", "car", "bonusmission", 1 );
 Game.BindReward( "elect_v", "art\\cars\\elect_v.p3d", "car", "streetrace", 1 );
-Game.BindReward( "plowk_v", "art\\cars\\plowk_v.p3d", "car", "forsale", 1, 150, "simpson" ); --Barney
-Game.BindReward( "cDuff", "art\\cars\\cDuff.p3d", "car", "forsale", 1, 125, "gil" );
+Game.BindReward( "otto_v", "art\\cars\\otto_v.p3d", "car", "forsale", 1, 150, "simpson" ); --Barney
+Game.BindReward( "icecream", "art\\cars\\icecream.p3d", "car", "forsale", 1, 150, "gil" );
 Game.BindReward( "cVan", "art\\cars\\cVan.p3d", "car", "forsale", 1, 100, "gil" );
 
 Game.BindReward( "homer", "art\\chars\\homer_m.p3d", "skin", "defaultskin", 1 );
 Game.BindReward( "h_pp", "art\\chars\\h_pp_m.p3d", "skin", "forsale", 1, 100, "interior" );
 Game.BindReward( "h_smrt", "art\\chars\\h_smrt_m.p3d", "skin", "forsale", 1, 125, "interior" );
-Game.BindReward( "h_stcrobe", "art\\chars\\h_stcr_m.p3d", "skin", "forsale", 1, 150, "interior" );
+Game.BindReward( "h_ice", "art\\chars\\h_ice_m.p3d", "skin", "forsale", 1, 150, "interior" );
 
 Game.SetTotalGags( 1, 15 );
 
