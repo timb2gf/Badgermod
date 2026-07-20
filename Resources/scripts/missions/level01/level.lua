@@ -545,6 +545,7 @@ Game.SuppressDriver("homer");
 Game.SuppressDriver("marge");
 Game.SuppressDriver("apu");
 Game.SuppressDriver("lisa");
+Game.SuppressDriver("otto");
 --Game.SuppressDriver("ned");
 --Game.SuppressDriver("barney");
 --Game.SuppressDriver("burns");
