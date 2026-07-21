@@ -119,6 +119,7 @@ Game.AddStage();
 	Game.SetStageMessageIndex(40); 
 	Game.SetHUDIcon( "wiggu_v" );
 	Game.SetMaxTraffic(2);
+	Game.SetStageCharacterModel("barney", "barney");
 	Game.ActivateVehicle("wiggu_v","NULL","chase"); 
 	Game.AddObjective("losetail","neither");
 		Game.SetObjTargetVehicle("wiggu_v");
