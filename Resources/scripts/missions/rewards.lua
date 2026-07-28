@@ -127,10 +127,10 @@ Game.SetTotalGags( 7, 15 );
 -- Car Attributes (top speed, acceleration, toughness, handling)
 -- Level 1
 Game.SetCarAttributes( "famil_v", 1, 1.5, 2.5, 4 );
-Game.SetCarAttributes( "cletu_v", 1, 1, 3.5, 2.5 );
+Game.SetCarAttributes( "cart_v", 1.5, 1, 1.5, 1 );
 Game.SetCarAttributes( "elect_v", 2, 1.5, 1.5, 4 );
 Game.SetCarAttributes( "plowk_v", 1.5, 0.5, 5, 1.5 );
-Game.SetCarAttributes( "cDuff", 0.5, 0.5, 4, 1 );
+Game.SetCarAttributes( "icecream", 1.5, 1, 1, 3 );
 Game.SetCarAttributes( "cVan", 1.5, 1.5, 3.5, 3 );
 
 -- Level 2

@@ -1,23 +1,23 @@
 -- Shopping Cart
 
-Game.SetMass(500.0);
+Game.SetMass(250.0);
 
 Game.SetGasScale(7.8);
 Game.SetSlipGasScale(8.8);
 
 Game.SetBrakeScale(7.0);
 
-Game.SetTopSpeedKmh(125.0);
+Game.SetTopSpeedKmh(135.0);
 
-Game.SetMaxWheelTurnAngle(25.0);
-Game.SetHighSpeedSteeringDrop(0.3);
+Game.SetMaxWheelTurnAngle(10.0);
+Game.SetHighSpeedSteeringDrop(0.25);
 
 Game.SetTireGrip(2.55);
 
-Game.SetNormalSteering(60.0);
+Game.SetNormalSteering(100.0);
 
-Game.SetSlipSteering(45.0);
-Game.SetEBrakeEffect(0.25);
+Game.SetSlipSteering(65.0);
+Game.SetEBrakeEffect(0.15);
 
 Game.SetSlipSteeringNoEBrake(40.0);
 Game.SetSlipEffectNoEBrake(0.03);
@@ -34,7 +34,7 @@ Game.SetSuspensionYOffset(-0.05);
 
 Game.SetWeebleOffset(-0.45);
 
-Game.SetHitPoints(0.5);
+Game.SetHitPoints(0.25);
 
 Game.SetBurnoutRange(0.25);
 Game.SetMaxSpeedBurstTime(1.5);
