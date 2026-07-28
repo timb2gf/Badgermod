@@ -8,7 +8,7 @@
 			<CustomCharacter Name="Barney" Index="35" />
 			<CustomCharacter Name="Moe" Index="36" />
 			<CustomCharacter Name="Rama" Index="37" />
-			<CustomCharacter Name="Mole" Index="38" />
+			<CustomCharacter Name="WILLIE" Index="30" />
 		</CustomCharacters>
 		
     <Level Number="1">
@@ -54,9 +54,7 @@
 		 
 		 <CollectorCard Number="7">
             <Quotes>
-				<Quote Name="Rama" />
-				<Quote Name="Mole" />
-				<Quote Name="Moe" />
+				<Quote Name="WILLIE" />
 			</Quotes>
          </CollectorCard>
 		 

@@ -11,7 +11,7 @@
 -- Level 1
 -- TOTAL Cost: $750
 Game.BindReward( "famil_v", "art\\cars\\famil_v.p3d", "car", "defaultcar", 1 );
-Game.BindReward( "cletu_v", "art\\cars\\cletu_v.p3d", "car", "bonusmission", 1 );
+Game.BindReward( "cart_v", "art\\cars\\cart_v.p3d", "car", "bonusmission", 1 );
 Game.BindReward( "elect_v", "art\\cars\\elect_v.p3d", "car", "streetrace", 1 );
 Game.BindReward( "otto_v", "art\\cars\\otto_v.p3d", "car", "forsale", 1, 150, "simpson" ); --Barney
 Game.BindReward( "icecream", "art\\cars\\icecream.p3d", "car", "forsale", 1, 150, "gil" );
