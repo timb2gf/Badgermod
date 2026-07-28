@@ -16204,41 +16204,6 @@ create daSoundResourceData named D_Air_Skn_04
     AddFilename ( "Skinner/D_Air_Skn_04.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Air_Skn_alive
-{
-    AddFilename ( "Skinner/D_Air_Skn_alive.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_girls
-{
-    AddFilename ( "Skinner/D_Air_Skn_girls.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_scream
-{
-    AddFilename ( "Skinner/D_Air_Skn_scream.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_screama
-{
-    AddFilename ( "Skinner/D_Air_Skn_screama.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_screamb
-{
-    AddFilename ( "Skinner/D_Air_Skn_screamb.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_screamc
-{
-    AddFilename ( "Skinner/D_Air_Skn_screamc.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Air_Skn_ugly
-{
-    AddFilename ( "Skinner/D_Air_Skn_ugly.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_Answer_Skn_01
 {
     AddFilename ( "Skinner/D_Answer_Skn_01.rsd" 1.000000 )
@@ -16269,31 +16234,6 @@ create daSoundResourceData named D_Arrive_Skn_04
     AddFilename ( "Skinner/D_Arrive_Skn_04.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Arrive_Skn_chimp
-{
-    AddFilename ( "Skinner/D_Arrive_Skn_chimp.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Arrive_Skn_fast
-{
-    AddFilename ( "Skinner/D_Arrive_Skn_fast.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Arrive_Skn_list
-{
-    AddFilename ( "Skinner/D_Arrive_Skn_list.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Arrive_Skn_path
-{
-    AddFilename ( "Skinner/D_Arrive_Skn_path.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Arrive_Skn_terri
-{
-    AddFilename ( "Skinner/D_Arrive_Skn_terri.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_Bcrash_Skn_01
 {
     AddFilename ( "Skinner/D_Bcrash_Skn_01.rsd" 1.000000 )
@@ -16302,26 +16242,6 @@ create daSoundResourceData named D_Bcrash_Skn_01
 create daSoundResourceData named D_Bcrash_Skn_01a
 {
     AddFilename ( "Skinner/D_Bcrash_Skn_01a.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Bcrash_Skn_blood
-{
-    AddFilename ( "Skinner/D_Bcrash_Skn_blood.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Bcrash_Skn_careful
-{
-    AddFilename ( "Skinner/D_Bcrash_Skn_careful.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Bcrash_Skn_head
-{
-    AddFilename ( "Skinner/D_Bcrash_Skn_head.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Bcrash_Skn_morecare
-{
-    AddFilename ( "Skinner/D_Bcrash_Skn_morecare.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named D_Break_Skn_01
@@ -16342,26 +16262,6 @@ create daSoundResourceData named D_Break_Skn_03
 create daSoundResourceData named D_Break_Skn_04
 {
     AddFilename ( "Skinner/D_Break_Skn_04.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Break_Skn_alive
-{
-    AddFilename ( "Skinner/D_Break_Skn_alive.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Break_Skn_broke
-{
-    AddFilename ( "Skinner/D_Break_Skn_broke.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Break_Skn_going
-{
-    AddFilename ( "Skinner/D_Break_Skn_going.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Break_Skn_pay
-{
-    AddFilename ( "Skinner/D_Break_Skn_pay.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named D_Burn_Skn_01
@@ -16389,26 +16289,6 @@ create daSoundResourceData named D_Burn_Skn_04a
     AddFilename ( "Skinner/D_Burn_Skn_04a.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Burn_Skn_accel
-{
-    AddFilename ( "Skinner/D_Burn_Skn_accel.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Burn_Skn_didi
-{
-    AddFilename ( "Skinner/D_Burn_Skn_didi.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Burn_Skn_tires
-{
-    AddFilename ( "Skinner/D_Burn_Skn_tires.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Burn_Skn_wild
-{
-    AddFilename ( "Skinner/D_Burn_Skn_wild.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_CarWay_Skn_01
 {
     AddFilename ( "Skinner/D_CarWay_Skn_01.rsd" 1.000000 )
@@ -16429,31 +16309,6 @@ create daSoundResourceData named D_CarWay_Skn_04
     AddFilename ( "Skinner/D_CarWay_Skn_04.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_CarWay_Skn_around
-{
-    AddFilename ( "Skinner/D_CarWay_Skn_around.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_CarWay_Skn_grow
-{
-    AddFilename ( "Skinner/D_CarWay_Skn_grow.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_CarWay_Skn_hippy
-{
-    AddFilename ( "Skinner/D_CarWay_Skn_hippy.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_CarWay_Skn_push
-{
-    AddFilename ( "Skinner/D_CarWay_Skn_push.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_CarWay_Skn_way
-{
-    AddFilename ( "Skinner/D_CarWay_Skn_way.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_Damage_Skn_01
 {
     AddFilename ( "Skinner/D_Damage_Skn_01.rsd" 1.000000 )
@@ -16472,26 +16327,6 @@ create daSoundResourceData named D_Damage_Skn_03
 create daSoundResourceData named D_Damage_Skn_04
 {
     AddFilename ( "Skinner/D_Damage_Skn_04.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Damage_Skn_coming
-{
-    AddFilename ( "Skinner/D_Damage_Skn_coming.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Damage_Skn_learn
-{
-    AddFilename ( "Skinner/D_Damage_Skn_learn.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Damage_Skn_smasha
-{
-    AddFilename ( "Skinner/D_Damage_Skn_smasha.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Damage_Skn_why
-{
-    AddFilename ( "Skinner/D_Damage_Skn_why.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named D_Dcar_Skn_01
@@ -16519,26 +16354,6 @@ create daSoundResourceData named D_Dcar_Skn_05
     AddFilename ( "Skinner/D_Dcar_Skn_05.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Dcar_Skn_again
-{
-    AddFilename ( "Skinner/D_Dcar_Skn_again.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Dcar_Skn_fail
-{
-    AddFilename ( "Skinner/D_Dcar_Skn_fail.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Dcar_Skn_fubar
-{
-    AddFilename ( "Skinner/D_Dcar_Skn_fubar.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Dcar_Skn_total
-{
-    AddFilename ( "Skinner/D_Dcar_Skn_total.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_Door_Skn_01
 {
     AddFilename ( "Skinner/D_Door_Skn_01.rsd" 1.000000 )
@@ -16557,21 +16372,6 @@ create daSoundResourceData named D_Door_Skn_03
 create daSoundResourceData named D_Door_Skn_04
 {
     AddFilename ( "Skinner/D_Door_Skn_04.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Door_Skn_genius
-{
-    AddFilename ( "Skinner/D_Door_Skn_genius.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Door_Skn_idiot
-{
-    AddFilename ( "Skinner/D_Door_Skn_idiot.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Door_Skn_side
-{
-    AddFilename ( "Skinner/D_Door_Skn_side.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named D_HitP_Skn_01
@@ -16599,26 +16399,6 @@ create daSoundResourceData named D_HitP_Skn_05
     AddFilename ( "Skinner/D_HitP_Skn_05.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_HitP_Skn_asking
-{
-    AddFilename ( "Skinner/D_HitP_Skn_asking.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_HitP_Skn_friends
-{
-    AddFilename ( "Skinner/D_HitP_Skn_friends.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_HitP_Skn_guilt
-{
-    AddFilename ( "Skinner/D_HitP_Skn_guilt.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_HitP_Skn_harder
-{
-    AddFilename ( "Skinner/D_HitP_Skn_harder.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_Mcrash_Skn_01
 {
     AddFilename ( "Skinner/D_Mcrash_Skn_01.rsd" 1.000000 )
@@ -16639,31 +16419,6 @@ create daSoundResourceData named D_Mcrash_Skn_04
     AddFilename ( "Skinner/D_Mcrash_Skn_04.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Mcrash_Skn_dish
-{
-    AddFilename ( "Skinner/D_Mcrash_Skn_dish.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Mcrash_Skn_handi
-{
-    AddFilename ( "Skinner/D_Mcrash_Skn_handi.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Mcrash_Skn_learn
-{
-    AddFilename ( "Skinner/D_Mcrash_Skn_learn.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Mcrash_Skn_paint
-{
-    AddFilename ( "Skinner/D_Mcrash_Skn_paint.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Mcrash_Skn_pansy
-{
-    AddFilename ( "Skinner/D_Mcrash_Skn_pansy.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named D_MissP_Skn_01
 {
     AddFilename ( "Skinner/D_MissP_Skn_01.rsd" 1.000000 )
@@ -16677,26 +16432,6 @@ create daSoundResourceData named D_MissP_Skn_02
 create daSoundResourceData named D_MissP_Skn_03
 {
     AddFilename ( "Skinner/D_MissP_Skn_03.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_MissP_Skn_buddy
-{
-    AddFilename ( "Skinner/D_MissP_Skn_buddy.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_MissP_Skn_face
-{
-    AddFilename ( "Skinner/D_MissP_Skn_face.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_MissP_Skn_hit
-{
-    AddFilename ( "Skinner/D_MissP_Skn_hit.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_MissP_Skn_idiot
-{
-    AddFilename ( "Skinner/D_MissP_Skn_idiot.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named D_Time_Skn_01
@@ -16719,54 +16454,9 @@ create daSoundResourceData named D_Time_Skn_04
     AddFilename ( "Skinner/D_Time_Skn_04.rsd" 1.000000 )
     SetStreaming ( true )
 }
-create daSoundResourceData named D_Time_Skn_father
-{
-    AddFilename ( "Skinner/D_Time_Skn_father.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Time_Skn_mole
-{
-    AddFilename ( "Skinner/D_Time_Skn_mole.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named D_Time_Skn_slow
-{
-    AddFilename ( "Skinner/D_Time_Skn_slow.rsd" 1.000000 )
-    SetStreaming ( true )
-}
 create daSoundResourceData named P_HitByC_Skn_01
 {
     AddFilename ( "Skinner/P_HitByC_Skn_01.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByC_Skn_charlie
-{
-    AddFilename ( "Skinner/P_HitByC_Skn_charlie.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByC_Skn_child
-{
-    AddFilename ( "Skinner/P_HitByC_Skn_child.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByC_Skn_johnny
-{
-    AddFilename ( "Skinner/P_HitByC_Skn_johnny.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByW_Skn_delinquent
-{
-    AddFilename ( "Skinner/P_HitByW_Skn_delinquent.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByW_Skn_stranger
-{
-    AddFilename ( "Skinner/P_HitByW_Skn_stranger.rsd" 1.000000 )
-    SetStreaming ( true )
-}
-create daSoundResourceData named P_HitByW_Skn_watch
-{
-    AddFilename ( "Skinner/P_HitByW_Skn_watch.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named P_NHitByC_Skn_01
