@@ -96,6 +96,27 @@ if Level == 1 then
             print("Not redirecting \"" .. Path .. "\": No dialog found.")
         end
 		
+	elseif Mission == 7 then
+		SafeRedirect("w_mstart_fla_01.rsd")
+		SafeRedirect("w_mstart_fla_02.rsd")
+		SafeRedirect("w_mstart_fla_03.rsd")
+        
+        local Path = GetPath()
+        local Type = Path:lower():match("^homer[\\/](._.-)_")
+        
+        if Type then
+            local Dialog = Dialog["flanders"][Type]
+            if Dialog then
+                local NewPath = Dialog[math.random(#Dialog)]
+                print("Redirecting \"" .. Path .. "\" to \"" .. NewPath .. "\".")
+                Redirect(NewPath)
+            else
+                --print("Not redirecting \"" .. Path .. "\": No dialog found.")
+            end
+        else
+            print("Not redirecting \"" .. Path .. "\": No dialog found.")
+        end
+		
 	elseif Mission == 2 then -- This has to be put last for the script to work (no idea why it just works)
         SafeRedirect("w_mstart_bur_01.rsd")
         SafeRedirect("w_mstart_bur_02.rsd")

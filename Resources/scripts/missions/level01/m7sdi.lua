@@ -14,14 +14,24 @@ Game.SetInitialWalk("level1_homer_walkto");
 
 Game.AddStage(0);
 	Game.SetMaxTraffic(2);
-	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_00.p3d" );
-	Game.SetHUDIcon("marage");	
-	Game.SetStageMessageIndex(00);
+	Game.SetHUDIcon("lenny");	
+	Game.SetStageMessageIndex(275);
 	Game.AddObjective("talkto","neither");
 		Game.AddStageVehicle("pizza","m7_blackvan","NULL","Missions\\level01\\M4follow.con");
 		Game.AddNPC("lenny", "m1_marge_sd");
 		Game.SetTalkToTarget("lenny", 0, 0.2);
 		Game.AddNPC("carl", "m6_carl_end");
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetMaxTraffic(2);
+	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_07.p3d" );
+	Game.SetHUDIcon("ned");	
+	Game.SetStageMessageIndex(276);
+	Game.AddObjective("talkto","neither");
+		Game.AddNPC("ned", "m2_ned_sd");
+		Game.SetTalkToTarget("ned", 0, 0.2);
 	Game.CloseObjective();
 Game.CloseStage();
 
