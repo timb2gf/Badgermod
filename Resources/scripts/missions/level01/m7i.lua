@@ -9,12 +9,15 @@ Game.UsePedGroup( 0 );
 
 Game.AddStage();
 	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(275);
+	Game.SetStageMessageIndex(277);
+	Game.SetMaxTraffic(0);
+	Game.SetHUDIcon("mansion");	
 	Game.AddStageWaypoint( "m7_pizza_race1" );
 	Game.AddStageWaypoint( "m7_pizza_race2" );
 	Game.AddStageWaypoint( "m7_pizza_race3" );
 	Game.AddStageWaypoint( "m7_pizza_race4" );
 	Game.AddStageWaypoint( "m7_race8" );
+	Game.StageStartMusicEvent("M7_drama");
 	Game.StartCountdown("count");
 	Game.AddToCountdownSequence( "3",  1000 ); -- duration time in milliseconds
 	Game.AddToCountdownSequence( "2",  1000 ); -- duration time in milliseconds
@@ -29,10 +32,71 @@ Game.AddStage();
 		Game.AddCollectible("m7_race6");
 		Game.AddCollectible("m7_race7");
 		Game.AddCollectible("m7_race8","finish_line")
+		Game.AddNPC("burns", "m7_burns_place");
+		Game.RemoveNPC ("ned");
 	Game.CloseObjective();
 	Game.AddCondition("race");
 		Game.SetCondTargetVehicle("pizza");
 	Game.CloseCondition();
+	Game.AddCondition("outofvehicle");
+		Game.SetCondTime( 10000 );
+	Game.CloseCondition();
+	Game.AddCondition( "damage" );
+		Game.SetCondMinHealth( 0.0 );
+		Game.SetCondTargetVehicle( "current" );
+	Game.CloseCondition();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetHUDIcon("burns");	
+	Game.SetStageMessageIndex(278);
+	Game.SetStageCharacterModel("ned");
+	Game.AddObjective("talkto","neither");
+		Game.SetTalkToTarget("burns", 0, 0.2);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.SetStageMessageIndex(282);
+	Game.AddObjective("timer");
+		Game.SetDurationTime(5);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetStageMessageIndex(12);
+	Game.SetStageCharacterModel("ned");
+	Game.AddObjective("getin", "neither");
+		Game.SetObjTargetVehicle("current");
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage(0);
+	Game.SetStageMessageIndex(279);
+	Game.SetHUDIcon("church");
+	Game.AddObjective("goto");
+		Game.SetStageCharacterModel("ned");
+		Game.AddStageVehicle("famil_v","m7_homer_car","NULL","Missions\\level01\\M4follow.con");
+		Game.SetDestination("m7_dest_church", "carsphere");
+		Game.SetCollectibleEffect("wrench_collect");
+		Game.AddNPC("bart", "m7_bart_place");
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage();
+	Game.SetHUDIcon("bart");	
+	Game.SetStageMessageIndex(280);
+	Game.SetStageCharacterModel("ned");
+	Game.AddObjective("talkto","neither");
+		Game.SetTalkToTarget("bart", 0, 0.2);
+	Game.CloseObjective();
+Game.CloseStage();
+
+Game.AddStage("final");
+	Game.SetStageMessageIndex(281);
+	Game.AddObjective("timer");
+		Game.SetDurationTime(5);
+	Game.CloseObjective();
 Game.CloseStage();
 
 Game.CloseMission();

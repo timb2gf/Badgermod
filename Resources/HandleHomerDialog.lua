@@ -100,6 +100,9 @@ if Level == 1 then
 		SafeRedirect("w_mstart_fla_01.rsd")
 		SafeRedirect("w_mstart_fla_02.rsd")
 		SafeRedirect("w_mstart_fla_03.rsd")
+		SafeRedirect("w_mvic_fla_01.rsd")
+		SafeRedirect("w_mvic_fla_02.rsd")
+		SafeRedirect("w_mvic_fla_03.rsd")
         
         local Path = GetPath()
         local Type = Path:lower():match("^homer[\\/](._.-)_")

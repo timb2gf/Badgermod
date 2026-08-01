@@ -112,25 +112,13 @@
 		<Beat>2</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="anything" TargetRegion="M7_end_Pos_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="M5_Main_region" TargetRegion="M7_end_Pos_region" SourceTime="0" SourceStart="959.999939" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
 		<Beat>4</Beat>
 	</FadeTransition>
-	<FadeTransition SourceRegion="anything" TargetRegion="M7_end_Neg_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
-		<Beat>1</Beat>
-		<Beat>2</Beat>
-		<Beat>3</Beat>
-		<Beat>4</Beat>
-	</FadeTransition>
-	<FadeTransition SourceRegion="anything" TargetRegion="M7_end_Sus_region" SourceTime="5" SourceStart="0" TargetTime="0" TargetStart="0">
-		<Beat>1</Beat>
-		<Beat>2</Beat>
-		<Beat>3</Beat>
-		<Beat>4</Beat>
-	</FadeTransition>
-	<FadeTransition SourceRegion="M7_main_region" TargetRegion="M7_drama_region" SourceTime="5" SourceStart="705.8823" TargetTime="0" TargetStart="0">
+	<FadeTransition SourceRegion="anything" TargetRegion="M7_end_Neg_region" SourceTime="0" SourceStart="0.5" TargetTime="0" TargetStart="0">
 		<Beat>1</Beat>
 		<Beat>2</Beat>
 		<Beat>3</Beat>
@@ -403,20 +391,11 @@
 	<Event Name="M5_start">
 		<PlayRegionAction Region="M5_Main_region" RegionResumeType="Restart" />
 	</Event>
-	<Event Name="M7_start">
-		<PlayRegionAction Region="M7_main_region" RegionResumeType="Resume" />
-	</Event>
-	<Event Name="M7_drama">
-		<PlayRegionAction Region="M7_drama_region" RegionResumeType="Resume" />
-	</Event>
 	<Event Name="M7_win">
 		<PlayRegionAction Region="M7_end_Pos_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="M7_lose">
 		<PlayRegionAction Region="M7_end_Neg_region" RegionResumeType="Restart" />
-	</Event>
-	<Event Name="M7_get_out_of_car">
-		<PlayRegionAction Region="M7_end_Sus_region" RegionResumeType="Restart" />
 	</Event>
 	<Event Name="M4_start">
 		<PlayRegionAction Region="M4_main_region" RegionResumeType="Resume" />
@@ -1220,17 +1199,8 @@
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
-<Region Name="M7_main_region" Volume="1">
+	<Region Name="M7_Main_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
-			<StreamEvent Name="Orch_Chase01_Pickup" />
-			<LogicRepeatEvent>
-				<StreamEvent Name="Orch_Chase01_Main" />
-			</LogicRepeatEvent>
-		</Layer>
-	</Region>
-	<Region Name="M7_drama_region" Volume="1">
-		<Layer Name="l" Constant="true" Volume="1">
-			<StreamEvent Name="Orch_Chase01_Drama_Pickup" />
 			<LogicRepeatEvent>
 				<StreamEvent Name="Orch_Chase01_Drama" />
 				<StreamEvent Name="Orch_Chase01_Main" />
@@ -1240,21 +1210,14 @@
 	<Region Name="M7_end_Pos_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="Orch_Chase01_End_Pos" />
+				<StreamEvent Name="PowerPlant_End_Pos" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>
 	<Region Name="M7_end_Neg_region" Volume="1">
 		<Layer Name="l" Constant="true" Volume="1">
 			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="Orch_Chase01_End_Neg" />
-			</LogicRepeatEvent>
-		</Layer>
-	</Region>
-	<Region Name="M7_end_Sus_region" ExitRegion="OF_explore_region" Volume="1">
-		<Layer Name="l" Constant="true" Volume="1">
-			<LogicRepeatEvent Times="1">
-				<StreamEvent Name="Orch_Chase01_End_Sus" />
+				<StreamEvent Name="PowerPlant_End_Neg" />
 			</LogicRepeatEvent>
 		</Layer>
 	</Region>

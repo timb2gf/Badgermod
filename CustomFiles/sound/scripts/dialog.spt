@@ -3748,6 +3748,21 @@ create daSoundResourceData named W_Ridereply_Clt_tubes
     AddFilename ( "Cletus/W_Ridereply_Clt_tubes.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_flanders_1_convinit_Fla_L1M7
+{
+    AddFilename ( "conversations/C_flanders_1_convinit_Fla_L1M7.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_flanders_2_convinit_Hom_L1M7
+{
+    AddFilename ( "conversations/C_flanders_2_convinit_Hom_L1M7.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_flanders_3_convinit_Fla_L1M7
+{
+    AddFilename ( "conversations/C_flanders_3_convinit_Fla_L1M7.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_accuse_1_convinit_Hom_L1M3
 {
     AddFilename ( "conversations/C_accuse_1_convinit_Hom_L1M3.rsd" 1.000000 )
@@ -11017,6 +11032,21 @@ create daSoundResourceData named W_Mstart_Fla_03
 create daSoundResourceData named W_Mvic_Brn_01.rsd
 {
     AddFilename ( "Barney\W_Mvic_Brn_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mvic_Fla_01.rsd
+{
+    AddFilename ( "Flanders\W_Mvic_Fla_01.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mvic_Fla_02.rsd
+{
+    AddFilename ( "Flanders\W_Mvic_Fla_02.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named W_Mvic_Fla_03.rsd
+{
+    AddFilename ( "Flanders\W_Mvic_Fla_03.rsd" 1.000000 )
     SetStreaming ( true )
 }
 create daSoundResourceData named W_Mvic_Brn_02.rsd
