@@ -15,7 +15,7 @@ Game.BindReward( "cart_v", "art\\cars\\cart_v.p3d", "car", "bonusmission", 1 );
 Game.BindReward( "skinn_v", "art\\cars\\skinn_v.p3d", "car", "streetrace", 1 );
 Game.BindReward( "otto_v", "art\\cars\\otto_v.p3d", "car", "forsale", 1, 150, "simpson" ); --Barney
 Game.BindReward( "icecream", "art\\cars\\icecream.p3d", "car", "forsale", 1, 150, "gil" );
-Game.BindReward( "cVan", "art\\cars\\cVan.p3d", "car", "forsale", 1, 100, "gil" );
+Game.BindReward( "cDuff", "art\\cars\\cDuff.p3d", "car", "forsale", 1, 150, "gil" );
 
 Game.BindReward( "homer", "art\\chars\\homer_m.p3d", "skin", "defaultskin", 1 );
 Game.BindReward( "h_pp", "art\\chars\\h_pp_m.p3d", "skin", "forsale", 1, 100, "interior" );

@@ -3818,6 +3818,16 @@ create daSoundResourceData named C_scotland_1_convinit_Wil_L1M4
     AddFilename ( "conversations/C_scotland_1_convinit_Wil_L1M4.rsd" 1.000000 )
     SetStreaming ( true )
 }
+create daSoundResourceData named C_chase_1_noboxconv_Wig_L1M5
+{
+    AddFilename ( "conversations/C_chase_1_noboxconv_Wig_L1M5.rsd" 1.000000 )
+    SetStreaming ( true )
+}
+create daSoundResourceData named C_crime_1_noboxconv_Wig_L1M5
+{
+    AddFilename ( "conversations/C_crime_1_noboxconv_Wig_L1M5.rsd" 1.000000 )
+    SetStreaming ( true )
+}
 create daSoundResourceData named C_greed_1_noboxconv_Lis_L1M2
 {
     AddFilename ( "conversations/C_greed_1_noboxconv_Lis_L1M2.rsd" 1.000000 )

@@ -25,7 +25,7 @@ Game.AddStage();
 	Game.AddToCountdownSequence( "GO", 400 ); -- duration time in milliseconds
 	Game.SetStageCharacterModel("ned");
 	Game.AddObjective( "race","both");
-		Game.AddStageVehicle("pizza","m7_smithers_carstart","race","Missions\\level01\\M4follow.con");
+		Game.AddStageVehicle("pizza","m7_smithers_carstart","race","Missions\\level01\\M7race.con");
 		Game.SetStageAIRaceCatchupParams("pizza", 80, 0.5, 1.0, 1.5);
 		Game.AddCollectible("m7_race2");
 		Game.AddCollectible("m7_race4");
@@ -45,6 +45,7 @@ Game.AddStage();
 		Game.SetCondMinHealth( 0.0 );
 		Game.SetCondTargetVehicle( "current" );
 	Game.CloseCondition();
+	Game.ShowStageComplete();
 Game.CloseStage();
 
 Game.AddStage(0);
@@ -58,6 +59,7 @@ Game.CloseStage();
 
 Game.AddStage();
 	Game.SetStageMessageIndex(282);
+	Game.SetStageCharacterModel("ned");
 	Game.AddObjective("timer");
 		Game.SetDurationTime(5);
 	Game.CloseObjective();
@@ -81,6 +83,7 @@ Game.AddStage(0);
 		Game.SetCollectibleEffect("wrench_collect");
 		Game.AddNPC("bart", "m7_bart_place");
 	Game.CloseObjective();
+	Game.ShowStageComplete();
 Game.CloseStage();
 
 Game.AddStage();
@@ -93,9 +96,9 @@ Game.AddStage();
 Game.CloseStage();
 
 Game.AddStage("final");
-	Game.SetStageMessageIndex(281);
 	Game.AddObjective("timer");
-		Game.SetDurationTime(5);
+	Game.SetStageCharacterModel("ned");
+		Game.SetDurationTime(3);
 	Game.CloseObjective();
 Game.CloseStage();
 

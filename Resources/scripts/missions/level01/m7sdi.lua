@@ -46,11 +46,11 @@ Game.AddStage(0);
 	Game.AddObjective("dialogue");
 		Game.AmbientAnimationRandomize( 1, 0 );      -- ( pc=0, npc=1) (nonrandom=0, random=1)
 		Game.AmbientAnimationRandomize( 0, 0 );
+		Game.AddAmbientNpcAnimation( "dialogue_yes" );
 		Game.AddAmbientNpcAnimation( " " );
 		Game.SetConversationCam( 1, "pc_near" );
 		Game.SetConversationCam( 0, "pc_far" );
 		Game.SetConversationCam( 2, "pc_near" );
-		Game.AddAmbientNpcAnimation( "dialogue_yes" );
 		Game.SetCamBestSide("m5_bestcam");
 		Game.SetDialogueInfo("ned","homer","flanders",0);
 		Game.SetDialoguePositions("m2_ned_sd","m2_homer_ned","m5_bestcam");
