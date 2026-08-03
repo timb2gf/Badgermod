@@ -81,7 +81,7 @@ Game.AddStage(0);
 		Game.AddStageVehicle("famil_v","m7_homer_car","NULL","Missions\\level01\\M4follow.con");
 		Game.SetDestination("m7_dest_church", "carsphere");
 		Game.SetCollectibleEffect("wrench_collect");
-		Game.AddNPC("bart", "m7_bart_place")
+		Game.AddNPC("bart", "m7_bart_place");
 	Game.CloseObjective();
 	Game.ShowStageComplete();
 Game.CloseStage();
