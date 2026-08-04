@@ -295,12 +295,12 @@ Game.AddSpawnPointByLocatorScript("w_bonuscar","beecamera","Shelley","w_bonuscar
 
 Game.AddSpawnPointByLocatorScript("w_stonetemple","beecamera","Shelley","w_stonetemple","60.0","60");
 
-Game.AddSpawnPointByLocatorScript("w_trailor1","beecamera","Shelley","w_trailor1","50.0","60");
+Game.AddSpawnPointByLocatorScript("w_quimbussy","beecamera","Shelley","w_quimbussy","50.0","60");
 Game.AddSpawnPointByLocatorScript("w_trailor2","beecamera","Shelley","w_trailor2","50.0","60");
-Game.AddSpawnPointByLocatorScript("w_cardguard","beecamera","Shelley","w_cardguard","60.0","60");
+Game.AddSpawnPointByLocatorScript("w_richhouse","beecamera","Shelley","w_richhouse","60.0","60");
 
 Game.AddSpawnPointByLocatorScript("w_bridge1","beecamera","Shelley","w_bridge1","30.0","60");
-Game.AddSpawnPointByLocatorScript("w_bridge2","beecamera","Shelley","w_bridge2","30.0","60");
+Game.AddSpawnPointByLocatorScript("w_burnsmansion","beecamera","Shelley","w_burnsmansion","30.0","60");
 Game.AddSpawnPointByLocatorScript("w_barn","beecamera","Shelley","w_barn","20.0","60");
 
 -- They will evade between a certain distance in the horizontal, specified by the 1st 2 numbers
@@ -341,7 +341,7 @@ Game.AddSpawnPointByLocatorScript("w_gasroof","beecamera","Shelley","w_gasroof",
 
 --Zone 4
 
-Game.AddSpawnPointByLocatorScript("w_schoolroof2","beecamera","Shelley","w_schoolroof2","15.0","60");
+Game.AddSpawnPointByLocatorScript("w_alley","beecamera","Shelley","w_alley","15.0","60");
 Game.AddSpawnPointByLocatorScript("w_playground","beecamera","Shelley","w_playground","15.0","60");
 Game.AddSpawnPointByLocatorScript("w_schoolstairs","beecamera","Shelley","w_schoolstairs","15.0","60");
 Game.AddSpawnPointByLocatorScript("w_tower","beecamera","Shelley","w_tower","15.0","60");
