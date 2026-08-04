@@ -31,6 +31,7 @@ Game.CloseStage();
 
 Game.AddStage();
 	Game.ActivateVehicle("icecream","NULL","evade");
+	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_01.p3d" );
 	Game.AddStageWaypoint( "icecream_1" );
 	Game.AddStageWaypoint( "icecream_2" );
 	Game.AddObjective("timer");

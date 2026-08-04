@@ -38,6 +38,7 @@ Game.CloseStage();
 
 Game.AddStage(0);
 	Game.SetStageCharacterModel("mibach");
+	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_03.p3d" );
 	Game.AddObjective("dialogue");
 		Game.AddNPC ("npd", "m3_hiddenbadgerbar");
 		Game.AddNPC ("skinner", "m3_skinnerstart");
