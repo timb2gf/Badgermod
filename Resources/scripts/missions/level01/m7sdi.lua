@@ -1,6 +1,6 @@
 Game.SelectMission("m7sd");
 
-Game.SetMissionResetPlayerOutCar("level1_homer_start", "level1_carstart");
+Game.SetMissionResetPlayerOutCar("level1_homer_walkto", "level1_carstart");
 Game.SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
 
 Game.UsePedGroup( 0 );
@@ -9,8 +9,6 @@ Game.SetMissionStartCameraName( "mission0camShape" );
 Game.SetMissionStartMulticontName( "mission0cam" );
 Game.SetMissionStartCameraName( "mission0camShape" );
 Game.SetMissionStartMulticontName( "mission0cam" );
-
-Game.SetInitialWalk("level1_homer_walkto");
 
 Game.AddStage(0);
 	Game.SetMaxTraffic(2);
@@ -33,7 +31,7 @@ Game.AddStage();
 Game.CloseStage();
 
 Game.AddStage(0);
-	Game.SetMaxTraffic(2);
+	Game.SetMaxTraffic(0);
 	Game.SetHUDIcon("ned");	
 	Game.SetStageMessageIndex(276);
 	Game.AddObjective("talkto","neither");

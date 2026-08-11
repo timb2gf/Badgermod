@@ -12,30 +12,31 @@ Game.SetDynaLoadData("l1z3.p3d;l1r2.p3d;l1r3.p3d;");
 
 Game.AddStage();
 	Game.SetStageCharacterModel("skinner");
+	Game.RESET_TO_HERE();
 	Game.AddObjective("timer");
 		Game.AddStageCharacter ("homer", "m3_skinnerstart", "", "", "");
 		Game.AddStageVehicle("skinn_v","m3_skinnecarrstart","NULL","", "");
 		Game.SetDurationTime(1);
 	Game.CloseObjective();
 Game.CloseStage();
-
-Game.AddStage();
-	Game.RESET_TO_HERE();
-	Game.SetStageMessageIndex(270);
-	Game.SetStageCharacterModel("skinner");
-	Game.AddObjective("goto");
-		Game.SetDestination("m3_starter","dice");
-		Game.MustActionTrigger();
-	Game.CloseObjective();
-Game.CloseStage();
-
-Game.AddStage();
-	Game.SetStageCharacterModel("skinner");
-	Game.AddObjective("timer");
-		Game.SetDurationTime(1);
-	Game.CloseObjective();
-Game.CloseStage();
-
+--
+--Game.AddStage();
+--	Game.RESET_TO_HERE();
+--	Game.SetStageMessageIndex(270);
+--	Game.SetStageCharacterModel("skinner");
+--	Game.AddObjective("goto");
+--		Game.SetDestination("m3_starter","dice");
+--		Game.MustActionTrigger();
+--	Game.CloseObjective();
+--Game.CloseStage();
+--
+--Game.AddStage();
+--	Game.SetStageCharacterModel("skinner");
+--	Game.AddObjective("timer");
+--		Game.SetDurationTime(1);
+--	Game.CloseObjective();
+--Game.CloseStage();
+--
 Game.AddStage(0);
 	Game.SetStageCharacterModel("mibach");
 	Game.SetPresentationBitmap( "art/frontend/dynaload/images/mis01_03.p3d" );
