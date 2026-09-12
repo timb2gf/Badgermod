@@ -58,7 +58,7 @@ Game.AddStage(0);
 Game.CloseStage();
 
 Game.AddStage();
-	Game.SetStageMessageIndex(217);
+	Game.SetStageMessageIndex(270);
 	Game.SetHUDIcon( "simpsons" );
 	Game.AddObjective("goto");
 		Game.TurnGotoDialogOff();
